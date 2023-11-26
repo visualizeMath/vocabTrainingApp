@@ -2,6 +2,7 @@ from flask import Flask,session, render_template, request, flash,g,redirect,url_
 from flask_sqlalchemy import SQLAlchemy
 import secrets
 import sqlite3
+from sqlalchemy.exc import IntegrityError
 
 
 app = Flask(__name__)
@@ -26,7 +27,7 @@ db = SQLAlchemy(app)
 
 class TextEntry(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    german_text = db.Column(db.String(255), nullable=False)
+    german_text = db.Column(db.String(255), nullable=False, unique=True)
     turkish_text = db.Column(db.String(255), nullable=False)
 
 @app.route('/', methods=['GET', 'POST'])
@@ -35,15 +36,22 @@ def index():
         german_text = request.form['txtGerman']
         turkish_text = request.form['txtTurkish']
 
-        entry = TextEntry(german_text=german_text, turkish_text=turkish_text)
+        # Check if a record with the same german_text already exists
+        existing_entry = TextEntry.query.filter_by(german_text=german_text).first()
 
-        try:
-            db.session.add(entry)
-            db.session.commit()
-            flash('Operation successful!', 'success')
-        except Exception as e:
-            db.session.rollback()
-            flash(f'Error: {str(e)}', 'error')
+        if existing_entry:
+            flash('This word has already been created.', 'warning')
+        else:
+            entry = TextEntry(german_text=german_text, turkish_text=turkish_text)
+
+            try:
+                db.session.add(entry)
+                db.session.commit()
+                flash('Operation successful!', 'success')
+
+            except Exception as e:
+                db.session.rollback()
+                flash(f'Error: {str(e)}', 'error')
 
     return render_template('index.html')
 
@@ -68,18 +76,6 @@ def search():
 def delete_row(row_id):
     try:
         if request.method == 'POST':
-        #     db=get_db()
-        #     entry_to_delete = TextEntry.query.get(row_id)
-        #     # db.session.delete(entry_to_delete)
-        #     # db.session.commit()
-        #     cursor = db.cursor()
-        
-        #     query = """
-        #     DELETE FROM text_entry
-        #     WHERE id = ?
-        #     """
-        
-        # cursor.execute(query,entry_to_delete)
          entry_to_delete = TextEntry.query.get(row_id)
         db.session.delete(entry_to_delete)
         db.session.commit()
@@ -90,7 +86,20 @@ def delete_row(row_id):
 
     return redirect(url_for('index'))
 
+@app.route('/delete_all', methods=['POST'])    
+def delete_all():
+    try:
+        if request.method == 'POST':
+            TextEntry.query.delete()
+            db.session.commit()
+            flash('All records deleted successfully!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Error: {str(e)}', 'error')
+
+    return redirect(url_for('index'))
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0', port=5000)
