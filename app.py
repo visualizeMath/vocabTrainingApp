@@ -51,18 +51,14 @@ def index():
 def search():
     if request.method == 'POST':
         db = get_db()
-        print('db connected')
         cursor = db.cursor()
-        print('cursor reached')
         
         query = """
         SELECT * FROM text_entry
         WHERE german_text LIKE ? OR turkish_text LIKE ?
         """
 
-        # Use '%' to perform a partial match
         search_term = f"%{request.form['search']}%"
-        print('search term: '+search_term)
         cursor.execute(query, (search_term, search_term))
         results = cursor.fetchall()
 
@@ -71,8 +67,20 @@ def search():
 @app.route('/delete_row/<int:row_id>', methods=['POST'])    
 def delete_row(row_id):
     try:
-        # Assuming TextEntry is your model
-        entry_to_delete = TextEntry.query.get(row_id)
+        if request.method == 'POST':
+        #     db=get_db()
+        #     entry_to_delete = TextEntry.query.get(row_id)
+        #     # db.session.delete(entry_to_delete)
+        #     # db.session.commit()
+        #     cursor = db.cursor()
+        
+        #     query = """
+        #     DELETE FROM text_entry
+        #     WHERE id = ?
+        #     """
+        
+        # cursor.execute(query,entry_to_delete)
+         entry_to_delete = TextEntry.query.get(row_id)
         db.session.delete(entry_to_delete)
         db.session.commit()
         flash('Row deleted successfully!', 'success')
