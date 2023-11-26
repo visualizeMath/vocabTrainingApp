@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <form method="post" action="/">
+                    <div class="form-group col-md-4">
+                        <label for="txtGerman">German Text:</label>
+                        <input type="text" class="form-control" id="txtGerman" name="txtGerman" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="txtTurkish">Turkish Text:</label>
+                        <input type="text" class="form-control" id="txtTurkish" name="txtTurkish" required>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </form>
+            </div>      
+            <div class="col-md-6 search">
+                <div>
+                    <form method="POST" id="searchForm" action="/search">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <input type="text" class="form-control" id="searchInput" name="search" value="{{request.form.search}}" placeholder="Enter item to search">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                    <table class="table table-bordered mt-4" id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th>German Word</th>
+                                <th>Turkish Word</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in results %}
+                            <tr>
+                                <td>{{ row['german_text'] }}</td>
+                                <td>{{ row['turkish_text'] }}</td>
+                                <!-- Add more columns as needed -->
+                            </tr>
+                        {% endfor %} 
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>               
+           
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
