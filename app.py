@@ -1,4 +1,4 @@
-from flask import Flask,session, render_template, request, flash,g
+from flask import Flask,session, render_template, request, flash,g,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 import secrets
 import sqlite3
@@ -46,6 +46,7 @@ def index():
             flash(f'Error: {str(e)}', 'error')
 
     return render_template('index.html')
+
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
@@ -67,8 +68,20 @@ def search():
 
     return render_template('index.html',results=results)
 
-    
-    
+@app.route('/delete_row/<int:row_id>', methods=['POST'])    
+def delete_row(row_id):
+    try:
+        # Assuming TextEntry is your model
+        entry_to_delete = TextEntry.query.get(row_id)
+        db.session.delete(entry_to_delete)
+        db.session.commit()
+        flash('Row deleted successfully!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Error: {str(e)}', 'error')
+
+    return redirect(url_for('index'))
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()

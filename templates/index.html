@@ -50,6 +50,11 @@
                             <tr>
                                 <td>{{ row['german_text'] }}</td>
                                 <td>{{ row['turkish_text'] }}</td>
+                                <td>
+                                    <form method="post" action="{{ url_for('delete_row', row_id=row['id']) }}" onsubmit="return confirm('Are you sure you want to delete this row?');">
+                                        <button type="submit" class="btn btn-danger">Remove</button>
+                                    </form>
+                                </td>
                                 <!-- Add more columns as needed -->
                             </tr>
                         {% endfor %} 
