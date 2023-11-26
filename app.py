@@ -86,13 +86,15 @@ def delete_row(row_id):
 
     return redirect(url_for('index'))
 
-@app.route('/delete_all', methods=['POST'])    
-def delete_all():
+@app.route('/remove', methods=['GET','POST'])    
+def remove():
     try:
         if request.method == 'POST':
             TextEntry.query.delete()
             db.session.commit()
             flash('All records deleted successfully!', 'success')
+       
+
     except Exception as e:
         db.session.rollback()
         flash(f'Error: {str(e)}', 'error')

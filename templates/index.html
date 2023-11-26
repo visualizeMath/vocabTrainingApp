@@ -5,33 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Web App</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">Simple Vocabulary</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">SimpleApp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Vocabularies</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Operations
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Create</a>
-                <a class="dropdown-item" href="#">Delete</a>
+                <a class="dropdown-item" href="{{ url_for('remove')}}">Remove all</a>
+                
                 <a class="dropdown-item" href="#">Show all</a>
               </div>
             </li>
@@ -41,7 +40,7 @@
 
     
     
-    <div class="container-fluid">
+    <div class="container-fluid mt-4">
         <div class="row">
             <div class="col-md-6">
                 <form method="post" action="/">
@@ -53,7 +52,7 @@
                         <label for="txtTurkish">Turkish Text:</label>
                         <input type="text" class="form-control" id="txtTurkish" name="txtTurkish" required>
                     </div>
-                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <input type="submit" class="btn btn-primary ml-5" value="Create">
                 </form>
             </div>      
             <div class="col-md-6 search">
@@ -82,7 +81,7 @@
                                 <td>{{ row['turkish_text'] }}</td>
                                 <td>
                                     <form method="post" action="{{ url_for('delete_row', row_id=row['id']) }}" onsubmit="return confirm('Are you sure you want to delete this row?');">
-                                        <button type="submit" class="btn btn-danger col-md-2">Remove</button>
+                                        <button type="submit" class="btn btn-danger col-md-5">Remove</button>
                                     </form>
                                 </td>
                                 <!-- Add more columns as needed -->
@@ -96,7 +95,7 @@
            
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid mt-4">
         <div class="row">
             <div class="fixed-bottom">
                 {% for message in get_flashed_messages() %}
@@ -115,7 +114,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
 </body>
