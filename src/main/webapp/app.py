@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 import secrets
 import sqlite3
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy import Engine, delete
+from sqlalchemy import Result
 
 
 app = Flask(__name__)
@@ -90,22 +92,32 @@ def delete_row(row_id):
 def delete_all():
     try:
         if request.method == 'GET':
-            return redirect(url_for('delete_all'))
+            return render_template('delete_all.html')
         elif request.method=='POST':
-            TextEntry.query.delete()
-            db.session.commit()
-            flash('All records deleted successfully!', 'success')
-       
+           # Get the number of rows before deletion
+            rows_before = db.session.query(TextEntry).count()
 
+            # Delete all records from TextEntry table
+            db.session.query(TextEntry).delete()
+
+            # Commit the changes to the database
+            db.session.commit()
+
+            # Get the number of rows after deletion
+            rows_after = db.session.query(TextEntry).count()
+
+            # Calculate the number of rows deleted
+            rows_deleted = rows_before - rows_after
+
+            flash(f'{rows_deleted} rows deleted successfully!', 'success')
+       
     except Exception as e:
         db.session.rollback()
         flash(f'Error: {str(e)}', 'error')
+        print(f'Error: {str(e)}')
 
     return redirect(url_for('index'))
 
-@app.route('/deneme', methods=['GET','POST'])    
-def deneme():
-    return render_template('delete_all.html')
 
 if __name__ == '__main__':
     with app.app_context():

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Web App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     
 </head>
 <body>
@@ -29,7 +31,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Create</a>
-                <a class="dropdown-item" href="/deneme">Remove everything</a>
+                <a class="dropdown-item" href="/delete_all">Remove all records</a>
                 
                 <a class="dropdown-item" href="#">Show all</a>
               </div>
@@ -97,15 +99,20 @@
     </div>
     <div class="container-fluid mt-4">
         <div class="row">
-            <div class="fixed-bottom">
-                {% for message in get_flashed_messages() %}
-                    <div class="alert alert-dismissible fade show {% if message.startswith('success') %}alert-success{% elif message.startswith('error') %}alert-danger{% elif message.startswith('warning') %}alert-warning{% endif %}" role="alert">
-                        {{ message }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                {% endfor %}
+            <div class="fixed-bottom col-md-4">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
             </div>
         </div>
     </div>
