@@ -86,8 +86,8 @@ def delete_row(row_id):
 
     return redirect(url_for('index'))
 
-@app.route('/remove', methods=['GET','POST'])    
-def remove():
+@app.route('/delete_all', methods=['GET','POST'])    
+def delete_all():
     try:
         if request.method == 'POST':
             TextEntry.query.delete()
