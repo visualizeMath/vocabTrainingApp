@@ -1,6 +1,6 @@
 from flask import Flask,session, render_template, request, flash,g,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
-import secrets
+import secrets,re
 import sqlite3
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import Engine, delete
@@ -50,7 +50,7 @@ def index():
                 db.session.add(entry)
                 db.session.commit()
                 flash('Operation successful!', 'success')
-
+  
             except Exception as e:
                 db.session.rollback()
                 flash(f'Error: {str(e)}', 'error')
@@ -67,7 +67,6 @@ def search():
         SELECT * FROM text_entry
         WHERE german_text LIKE ? OR turkish_text LIKE ?
         """
-
         search_term = f"%{request.form['search']}%"
         cursor.execute(query, (search_term, search_term))
         results = cursor.fetchall()
@@ -109,7 +108,7 @@ def delete_all():
             # Calculate the number of rows deleted
             rows_deleted = rows_before - rows_after
 
-            flash(f'{rows_deleted} rows deleted successfully!', 'success')
+            flash(f'{rows_deleted} words deleted successfully!', 'success')
        
     except Exception as e:
         db.session.rollback()
@@ -117,6 +116,52 @@ def delete_all():
         print(f'Error: {str(e)}')
 
     return redirect(url_for('index'))
+import requests
+
+@app.route('/themes', methods=['GET','POST'])  
+def find_theme_of_word():
+    try:
+        if request.method == 'GET':
+            return render_template('wordthemes.html') 
+        elif request.method =='POST':
+
+            url = "https://twinword-twinword-bundle-v1.p.rapidapi.com/word_theme/"
+            querystring = {"entry":request.form.get('p_theme')}
+            
+            file_path = 'VocabTraining/api_keys.txt'
+            api_key, api_host = read_api_keys(file_path)
+
+            headers = {
+                "X-RapidAPI-Key": api_key,
+                "X-RapidAPI-Host": api_host
+            }
+
+            response = requests.get(url, headers=headers, params=querystring)
+            data =response.json()
+            if 'theme' in data:                 
+                return render_template('wordthemes.html',themes=data['theme'][:])
+            else:
+                # Handle the case where 'theme' key is not present in the response
+                return render_template('wordthemes.html', error_message="Invalid response from the API")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error finding theme of the word: {e}")
+        return None
+def read_api_keys(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+        match = re.search(r'"X-RapidAPI-Key":"(.*?)","X-RapidAPI-Host":"(.*?)"', content)
+        if match:
+            api_key = match.group(1)
+            print(api_key)
+            api_host = match.group(2)
+            print(api_host)
+            return api_key, api_host
+        else:
+            # Handle the case where the pattern is not found in the file
+            raise ValueError("API key and host pattern not found in the file")
+ 
+
 
 
 if __name__ == '__main__':
