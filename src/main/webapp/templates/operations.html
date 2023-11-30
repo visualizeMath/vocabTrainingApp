@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">SimpleApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#">vocabs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Operations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/themes">Find themes</a>
+                <a class="dropdown-item" href="/delete_all">Remove all words</a>
+                
+                <a class="dropdown-item" href="#">Show all</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid mt-5 ml-6 col-md-6 text-center">
+        <form method="POST" id="searchForTheme" action="{{ url_for('find_theme_of_word') }}">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" id="p_word" name="p_word"  placeholder="Enter a word..">
+                </div>
+                <div class="form-group col-md-2">
+                    <button type="submit" class="btn btn-primary btn-sm">Find Theme</button>
+                </div>
+                
+                {% if themes %}
+                    <table class="table table-sm mt-4 table-striped" id="themesTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Theme</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in themes %}
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td>{{ row }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+               
+               
+
+            </div>
+        </form>
+        <form method="POST" action="{{ url_for('find_examples') }}" id="searchForExamples>
+            <div class="ml-3">
+                <button type="submit" class="btn btn-warning btn-sm">See in example sentences</button>
+            </div>
+            {% if examples %}
+            <table class="table table-sm mt-4 table-striped" id="examplesTable">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in examples %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ row }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            {% endif %}
+
+        </form> 
+      
+    </div>
+    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

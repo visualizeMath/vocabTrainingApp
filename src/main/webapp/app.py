@@ -1,6 +1,6 @@
 from flask import Flask,session, render_template, request, flash,g,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
-import secrets,re
+import secrets,re,os
 import sqlite3
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import Engine, delete
@@ -122,49 +122,89 @@ import requests
 def find_theme_of_word():
     try:
         if request.method == 'GET':
-            return render_template('wordthemes.html') 
+            return render_template('operations.html') 
         elif request.method =='POST':
+            # Get the current working directory
+            current_dir = os.getcwd()
 
+            file_path_api = 'api_keys.txt'
+          
             url = "https://twinword-twinword-bundle-v1.p.rapidapi.com/word_theme/"
-            querystring = {"entry":request.form.get('p_theme')}
+            querystring = {"entry":request.form.get('p_word')}
             
-            file_path = 'VocabTraining/api_keys.txt'
-            api_key, api_host = read_api_keys(file_path)
+            api_key, api_host = read_api_keys(file_path_api)
 
             headers = {
                 "X-RapidAPI-Key": api_key,
                 "X-RapidAPI-Host": api_host
             }
-
+  
             response = requests.get(url, headers=headers, params=querystring)
             data =response.json()
             if 'theme' in data:                 
-                return render_template('wordthemes.html',themes=data['theme'][:])
+                return render_template('operations.html',themes=data['theme'][:],examples=None)
             else:
                 # Handle the case where 'theme' key is not present in the response
-                return render_template('wordthemes.html', error_message="Invalid response from the API")
+                return render_template('operations.html', error_message="Invalid response from the API")
 
     except requests.exceptions.RequestException as e:
         print(f"Error finding theme of the word: {e}")
         return None
-def read_api_keys(file_path):
-    with open(file_path, 'r') as file:
-        content = file.read()
-        match = re.search(r'"X-RapidAPI-Key":"(.*?)","X-RapidAPI-Host":"(.*?)"', content)
-        if match:
-            api_key = match.group(1)
-            print(api_key)
-            api_host = match.group(2)
-            print(api_host)
-            return api_key, api_host
-        else:
-            # Handle the case where the pattern is not found in the file
-            raise ValueError("API key and host pattern not found in the file")
- 
 
+@app.route('/examples', methods=['GET'])  
+def find_examples():
+    try:            
+        if request.method =='GET':
 
+            url = "https://twinword-twinword-bundle-v1.p.rapidapi.com/word_example/"
+            querystring = {"entry":request.form.get('p_word')}
+            
+            file_path_api = 'api_keys.txt'
+            api_key, api_host = read_api_keys(file_path_api)
 
+            headers = {
+                "X-RapidAPI-Key": api_key,
+                "X-RapidAPI-Host": api_host
+            }
+  
+            response = requests.get(url, headers=headers, params=querystring)
+            data =response.json()
+            if 'example' in data:                 
+                return render_template('operations.html',examples=data['example'][:],themes=None)
+            else:
+                return render_template('operations.html', error_message="Invalid response from the API")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error finding examples: {e}")
+        return None
+
+def read_api_keys(file_path_api):
+    try:
+        # Get the current working directory
+        current_dir = os.getcwd()
+        print("cUR DIRECTORY: "+current_dir)
+        # Construct the full file path
+        vocab_training_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+        full_file_path = os.path.join(vocab_training_dir, file_path_api)
+       
+        with open(full_file_path, 'r') as file:
+            content = file.read()
+            match = re.search(r'"X-RapidAPI-Key":"(.*?)","X-RapidAPI-Host":"(.*?)"', content)
+            if match:
+                api_key = match.group(1)
+                print(api_key)
+                api_host = match.group(2)
+                print(api_host)
+                return api_key, api_host
+            else:
+                # Handle the case where the pattern is not found in the file
+                raise ValueError("API key and host pattern not found in the file")
+    except FileNotFoundError:
+        # Handle the case where the file is not found
+        raise FileNotFoundError(f"File not found: {file_path_api}")
+    
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
+    
     app.run(debug=True,host='0.0.0.0', port=5000)
