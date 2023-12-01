@@ -347,11 +347,11 @@ if __name__ == '__main__':
         current_dir = os.getcwd()
         print("cUR DIRECTORY: "+current_dir)
         # Construct the full file path
-        file_path2words = "words.txt"
+        # file_path2words = "words.txt"
 
-        vocab_training_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-        full_file_path2words = os.path.join(vocab_training_dir, file_path2words)
+        # vocab_training_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+        # full_file_path2words = os.path.join(vocab_training_dir, file_path2words)
 
-        populate_database(full_file_path2words)
+        # populate_database(full_file_path2words)
 
     app.run(debug=True,host='0.0.0.0', port=5000)
