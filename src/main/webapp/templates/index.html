@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web App</title>
+    <title>VocabApp</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url_for('index') }}">SimpleApp</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">VocabApp</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,7 +45,7 @@
             <div class="col-md-6">
                 <!-- Content for the first div goes here -->
                 <div class="border p-2">
-                    <h4>Generate a random word with examples</h4>
+                    <h4>Generate a random word with example usages</h4>
                     <div class="container-fluid mt-4 table-responsive">
                             <form method="POST" action="{{ url_for('get_random_word') }}" class="form-inline">
                             <!-- Listbox -->
@@ -61,14 +62,16 @@
                             </div>
                                     <button type="submit" id="randomWordBtn" class="btn btn-success mt-2 ml-4">Get Random Word</button>
                             </form>
-                            <table class="table table-striped table-md mt-4">
+                            <table class="table table-striped table-md mt-4 text-sm">
                                 <thead>
                                     <tr>
-                                        <th>level</th>
-                                        <th>german</th>
-                                        <th>english</th>
-                                        <th>sentence in german</th>
-                                        <th>sentence in english</th>
+                                        <th class="text-sm">level</th>
+                                        <th class="text-sm">
+                                            german
+                                        </th>
+                                        <th class="text-sm">english</th>
+                                        <th class="text-sm">sentence in german</th>
+                                        <th class="text-sm">sentence in english</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -94,7 +97,7 @@
                 <!-- Content for the second div goes here -->
                 <div class="border p-2">
                     <h4>See list of vocabulary</h4>
-                    <p>This is the content of the second div.</p>
+                    <p>Enter a search term to see vocabularies</p>
                     <div class="search mt-4 table-responsive">
                         
                             <form method="POST" id="searchForm" action="{{ url_for('search',search=request.form.get('search','')) }}" onsubmit="saveSearchInput()">
@@ -112,10 +115,10 @@
                                     <tr>
                                         <th>#</th>
                                         <th>level</th>
-                                        <th>German</th>
-                                        <th>English</th>
-                                        <th>German Example</th>
-                                        <th>English Example</th>
+                                        <th>german</th>
+                                        <th>english</th>
+                                        <th>german Example</th>
+                                        <th>english Example</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -191,6 +194,8 @@
             </div>
         </div>
     </div>
+    <input type="hidden" id="randomWordBtnClicked" name="randomWordBtnClicked" value="false">
+
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -204,9 +209,18 @@
 <script>
     function saveSearchInput() {
         var searchInput = document.getElementById('searchInput');
-        sessionStorage.setItem('searchInputValue', searchInput.value);
-    }
+           // Check if the randomWordBtn is clicked
+           if (document.getElementById('randomWordBtnClicked').value === 'true') {
+            // Clear the sessionStorage and the search input value
+            sessionStorage.removeItem('searchInputValue');
+            searchInput.value = '';
+        } else {
+            // Save the search input value in sessionStorage
+            sessionStorage.setItem('searchInputValue', searchInput.value);
+        }
 
+
+    }
     // Run this function when the page loads to restore the search input value
     window.onload = function () {
         var searchInput = document.getElementById('searchInput');
@@ -232,6 +246,19 @@
         }
     });
 </script>
+<!-- Add the following script in your HTML file -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // On clicking the button with ID "randomWordBtn"
+        $("#randomWordBtn").click(function () {
+            // Clear the content of the text field named "search"
+            $("#searchInput").val("");
+        });
+    });
+</script>
+
 
 
 </body>
