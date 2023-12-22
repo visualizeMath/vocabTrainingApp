@@ -1,9 +1,9 @@
-from flask import Flask,session, render_template, request, flash,g,redirect,url_for
+from flask import Flask, jsonify,session, render_template, request, flash,g,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy,pagination
 import secrets,re,os
 import sqlite3
 from sqlalchemy.exc import IntegrityError
-from sqlalchemy import delete, func,or_
+from sqlalchemy import delete, func,or_,and_
 from sqlalchemy import Result
 from sqlalchemy import Column, Integer, String
 
@@ -11,15 +11,15 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from flask import current_app
 import random
-# from models import db, LanguageData
-
 
 app = Flask(__name__)
+
 app.config['SECRET_KEY'] = secrets.token_hex(16) 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['DATABASE'] = 'instance\data.db'
 # db.init_app(app)
 db = SQLAlchemy(app)
+
 # Create the SQLAlchemy instance
 # db = SQLAlchemy(app)
 
@@ -32,6 +32,7 @@ class LanguageData(db.Model):
     english_word = db.Column(db.String)
     german_example = db.Column(db.String)
     english_example = db.Column(db.String)
+    in_dictionary = db.Column(db.Boolean)
 
 # Function to create the application context
 def create_app_context():
@@ -76,6 +77,7 @@ def populate_database(file_path):
                         existing_entry.english_word = english_word
                         existing_entry.german_example = german_example
                         existing_entry.english_example = english_example
+
                     else:
                         # Create an instance of the LanguageData model
                         language_data = LanguageData(
@@ -83,7 +85,8 @@ def populate_database(file_path):
                             german_word=german_word,
                             english_word=english_word,
                             german_example=german_example,
-                            english_example=english_example
+                            english_example=english_example,
+                            in_dictionary=0
                         )
 
                         # Add the instance to the session
@@ -122,10 +125,6 @@ class TextEntry(db.Model):
     german_text = db.Column(db.String(255), nullable=False, unique=True)
     turkish_text = db.Column(db.String(255), nullable=False)
 
-
-
-
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -162,7 +161,7 @@ def get_results_for_page(page, per_page):
     
     query = """
     SELECT * FROM language_data
-    WHERE german_word LIKE ? OR english_word LIKE ?
+    WHERE in_dictionary = 1 
     """
     search_term = f"%{request.form['search']}%"
     cursor.execute(query, (search_term, search_term))
@@ -175,36 +174,32 @@ def get_results_for_page(page, per_page):
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        print('     --- This is POST ---')
-        search_term = request.form.get('search','').strip()
-        if search_term and search_term != '%%':
-            print("Search Term:", search_term)
-            page = request.args.get('page', 1, type=int)
-            print("Page:", page)
-            per_page = 5
-            paginated_results = LanguageData.query.filter(
-                or_(LanguageData.german_word.like(f"%{search_term}%"), LanguageData.english_word.like(f"%{search_term}%"))
-            ).paginate(page=page, per_page=per_page)
-            return render_template('index.html', results=paginated_results,search_term=search_term)
-        else:
-            flash('No search condition given!', 'warning')
+        # search_term = request.form.get('search','').strip()
+       
+        page = request.args.get('page', 1, type=int)
+        per_page = 10
+        paginated_results = LanguageData.query.filter(           
+                LanguageData.in_dictionary==1                 
+        ).paginate(page=page, per_page=per_page)
+        return render_template('index.html', results=paginated_results)
+        
       # Handle GET request or invalid search term
     elif request.method == 'GET':
         # Process the search term from the URL parameters
-        search_term = request.args.get('search', '').strip()
+        # search_term = request.args.get('search', '').strip()
         # search_term = request.form.get('search', '').strip()
 
-        if search_term and search_term != '%%':
+        # if search_term and search_term != '%%':
             # If the search term is valid, perform the search
-            print('     --- This is GET ---')
-            page = request.args.get('page', 1, type=int)
-            per_page = 5
+        print('     --- This is GET ---')
+        page = request.args.get('page', 1, type=int)
+        per_page = 10
 
-            paginated_results = LanguageData.query.filter(
-                or_(LanguageData.german_word.like(f"%{search_term}%"), LanguageData.english_word.like(f"%{search_term}%"))
-            ).paginate(page=page, per_page=per_page)
+        paginated_results = LanguageData.query.filter(
+            LanguageData.in_dictionary == 1 
+        ).paginate(page=page, per_page=per_page)
 
-            return render_template('index.html', results=paginated_results, search_term=search_term)
+        return render_template('index.html', results=paginated_results)
 
     # Handle invalid search term or other cases
     return redirect(url_for('index'))
@@ -213,15 +208,18 @@ def search():
 def delete_row(row_id):
     try:
         if request.method == 'POST':
-         entry_to_delete = LanguageData.query.get(row_id)
-        db.session.delete(entry_to_delete)
-        db.session.commit()
-        flash('Row deleted successfully!', 'success')
+         entry_to_update = LanguageData.query.get(row_id)
+         if entry_to_update:
+             entry_to_update.in_dictionary = 0
+             db.session.commit()
+             message = f'\'{entry_to_update.german_word}\' removed from dictionary!', 'success'
+             return jsonify({'success': True, 'message': message})
     except Exception as e:
         db.session.rollback()
-        flash(f'Error: {str(e)}', 'error')
+        return jsonify({'success': False, 'message': f'Error: {str(e)}'}), 500
+        # flash(f'Error: {str(e)}', 'error')
 
-    return redirect(url_for('index'))
+    return jsonify({'success': False, 'message': 'No entry found'}), 404
 
 @app.route('/delete_all', methods=['GET','POST'])    
 def delete_all():
@@ -288,33 +286,6 @@ def find_theme_of_word():
         print(f"Error finding theme of the word: {e}")
         return None
 
-@app.route('/examples', methods=['GET'])  
-def find_examples():
-    try:            
-        if request.method =='GET':
-
-            url = "https://twinword-twinword-bundle-v1.p.rapidapi.com/word_example/"
-            querystring = {"entry":request.form.get('p_word')}
-            
-            file_path_api = 'api_keys.txt'
-            api_key, api_host = read_api_keys(file_path_api)
-
-            headers = {
-                "X-RapidAPI-Key": api_key,
-                "X-RapidAPI-Host": api_host
-            }
-  
-            response = requests.get(url, headers=headers, params=querystring)
-            data =response.json()
-            if 'example' in data:                 
-                return render_template('operations.html',examples=data['example'][:],themes=None)
-            else:
-                return render_template('operations.html', error_message="Invalid response from the API")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error finding examples: {e}")
-        return None
-
 def read_api_keys(file_path_api):
     try:
         # Get the current working directory
@@ -339,6 +310,25 @@ def read_api_keys(file_path_api):
     except FileNotFoundError:
         # Handle the case where the file is not found
         raise FileNotFoundError(f"File not found: {file_path_api}")
+    
+@app.route('/add2dict/<int:row_id>', methods=['POST'])
+def add2dict(row_id):
+    # Find the row with the given ID
+    word_to_update = LanguageData.query.get(row_id)
+    
+    # Check if the word exists
+    if word_to_update:
+        # Update the in_dictionary column
+        word_to_update.in_dictionary = 1
+        db.session.commit()
+
+        # Redirect to a desired page after updating
+        flash(f'The word: \'{word_to_update.german_word}\' added to dictionary.', 'success')
+        return redirect(url_for('index'))        
+    else:
+        # Handle the case where the word doesn't exist
+        flash(f'The word could not be found.', 'error')
+        return redirect(url_for('index'))
     
 if __name__ == '__main__':
     with app.app_context():
