@@ -43,7 +43,7 @@
     <!-- basla -->
     <div class="container mt-2 ml-1">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <!-- Content for the first div goes here -->
                 <div class="border p-2">
                     <h4>Generate a random word with example usages</h4>
@@ -66,9 +66,7 @@
                                 <thead>
                                     <tr>
                                         <th class="text-sm"></th>
-                                        <th class="text-sm">
-                                            german
-                                        </th>
+                                        <th class="text-sm">german</th>
                                         <th class="text-sm">english</th>
                                         <th class="text-sm">sentence in german</th>
                                         <th class="text-sm">sentence in english</th>
@@ -79,15 +77,45 @@
                                         <tr>
                                             <td>
                                                 <form method="post" action="{{ url_for('add2dict', row_id=random_word.id) }}" onsubmit="">
-                                                    <button type="submit" class="btn btn-success btn-xs">
+                                                    <button type="submit" class="btn btn-primary btn-sm">
                                                         <i class="fa fa-plus"></i>
                                                     </button>
                                                 </form>
                                             </td>
-                                            <td>{{ random_word.german_word }}</td>
-                                            <td>{{ random_word.english_word }}</td>
-                                            <td>{{ random_word.german_example }}</td>
-                                            <td>{{ random_word.english_example }}</td>
+                                            <td class="mb-2">
+                                                <button type="button" class="pronounce-btn btn-success btn-sm" data-word="{{ random_word.german_word }}" data-language="german">
+                                                    <i class="fa fa-volume-up"></i>
+                                                </button>
+                                                <div class="mt-2">{{ random_word.german_word }}</div>
+                                            </td>
+                                                <!-- <td>
+                                                  
+                                                </td> -->
+                                               
+
+                                            <td>
+                                                <button type="button" class="pronounce-btn btn-warning btn-sm" data-word="{{ random_word.english_word }}" data-language="english">
+                                                    <i class="fa fa-volume-up"></i>
+                                                </button>
+                                                <div class="mt-2">{{ random_word.english_word }}</div>
+                                           
+                                            </td>
+                                           
+                                            
+                                            <td>
+                                                <button type="button" class="pronounce-btn btn-success btn-sm" data-word="{{ random_word.german_example }}" data-language="german">
+                                                    <i class="fa fa-volume-up"></i>
+                                                </button>
+
+                                                <div class="mt-2">{{ random_word.german_example }}</div>
+                                            </td>                                                                                 
+                                            
+                                            <td>
+                                                <button type="button" class="pronounce-btn btn-warning btn-sm" data-word="{{ random_word.english_example }}" data-language="english">
+                                                    <i class="fa fa-volume-up"></i>
+                                                </button>
+                                                <div class="mt-2">{{ random_word.english_example }}</div>
+                                            </td>                                                   
                                             
                                         </tr>
                                     {% else %}
@@ -100,7 +128,7 @@
                     </div>                 
                 </div>
             </div>    
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <!-- Content for the second div goes here -->
                 <div class="border p-2">
                     <h4>Your dictionary</h4>
@@ -112,17 +140,18 @@
                                     <!-- <div class="form-group col-md-3">
                                         <input type="text" class="form-control" id="searchInput" name="search" value="{{request.form.search}}" placeholder="Search a word">
                                     </div> -->
-                                    <div class="form-group col-md-2">
-                                        <button type="submit" class="btn btn-primary">See dictionary</button>
+                                    <div class="form-group col-md-4">
+                                        <button type="submit" class="btn btn-primary form-control">See dictionary</button>
                                     </div>
                                 </div>
                             </form>
                             <table class="table table-striped table-sm fs-6 mt-4" id="resultsTable">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
+                                        <!-- <th>#</th> -->
                                         <th>level</th>
                                         <th>german</th>
+                                        <th></th>
                                         <th>english</th>
                                         <!-- <th>german Example</th> -->
                                         <!-- <th>english Example</th> -->
@@ -133,15 +162,25 @@
                                     {% for row in results.items %}
                                     <tr>
                                         
-                                        <td>{{ loop.index }}</td>
+                                        <!-- <td>{{ loop.index }}</td> -->
                                         <td>{{ row['level'] }}</td>
                                         <td>{{ row['german_word'] }}</td>
+                                        <td>
+                                            <button type="button" class="pronounce-btn btn-success btn-sm" data-word="{{ row['german_word'] }}" data-language="german">
+                                                <i class="fa fa-volume-up"></i>
+                                            </button>
+                                        </td>
                                         <td>{{ row['english_word'] }}</td>
+                                        <td>
+                                            <button type="button" class="pronounce-btn btn-warning btn-sm" data-word="{{ row['english_word'] }}">
+                                                <i class="fa fa-volume-up"></i>
+                                            </button>
+                                        </td>
                                         <!-- <td>{{ row['german_example'] }}</td> -->
                                         <!-- <td>{{ row['english_example'] }}</td> -->
                                         <td>
                                             <!-- <form method="post" action="{{ url_for('delete_row', row_id=row['id']) }}"> -->
-                                                <button type="submit" class="btn btn-danger btn-xs delete-btn" data-toggle="modal" data-target="#confirmDeleteModal" data-rowid="{{ row['id'] }}">
+                                                <button type="submit" class="btn btn-danger btn-sm  delete-btn" data-toggle="modal" data-target="#confirmDeleteModal" data-rowid="{{ row['id'] }}">
                                                     <i class="fa fa-trash"></i>
                                                 </button>
                                             <!-- </form> -->
@@ -182,7 +221,7 @@
     </div>
     <!-- bitir -->
 
-    <div class="container-fluid mt-20">
+    <div class="container-fluid mt-20 d-flex justify-content-center">
         <div class="row">
             <div class="fixed-bottom col-md-4">
             {% with messages = get_flashed_messages(with_categories=true) %}
@@ -209,7 +248,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="modalLabel">Confirm Deletion</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -230,7 +269,7 @@
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -254,8 +293,8 @@
             url: '/delete_row/' + rowid,
             type: 'POST',
             success: function(response) {
-                // Handle success (e.g., close the modal, show a message, refresh the table)
-                $('#confirmDeleteModal').modal('hide');
+                // $('#confirmDeleteModal').modal('hide');
+                document.querySelector('#confirmDeleteModal button[data-bs-dismiss="modal"]').click();
                 // Refresh the table or remove the row from the table
             },
             error: function(xhr, status, error) {
@@ -295,8 +334,30 @@
         });
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var buttons = document.querySelectorAll('.pronounce-btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                var word = this.getAttribute('data-word');
+                var language = this.getAttribute('data-language') || 'en-US';
+
+                pronounceWord(word,language);
+            });
+        });
+    });
+    
+    function pronounceWord(word,language) {
+        var utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = language === 'german' ? 'de-DE' : 'en-US';
+        speechSynthesis.speak(utterance);
+    }
+    </script>
+    
+    
 
 
-
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

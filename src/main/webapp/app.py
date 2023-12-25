@@ -177,7 +177,7 @@ def search():
         # search_term = request.form.get('search','').strip()
        
         page = request.args.get('page', 1, type=int)
-        per_page = 10
+        per_page = 5
         paginated_results = LanguageData.query.filter(           
                 LanguageData.in_dictionary==1                 
         ).paginate(page=page, per_page=per_page)
@@ -193,7 +193,7 @@ def search():
             # If the search term is valid, perform the search
         print('     --- This is GET ---')
         page = request.args.get('page', 1, type=int)
-        per_page = 10
+        per_page = 5
 
         paginated_results = LanguageData.query.filter(
             LanguageData.in_dictionary == 1 
