@@ -1,0 +1,947 @@
+Level;German_word;English_word;German_example;English_example
+A2;Hallo;Hello;Hallo! Wie geht es dir?;Hello! How are you?
+A2;Danke;Thank you;Danke für deine Hilfe!;Thank you for your help!
+A2;Guten Tag;Good day;Guten Tag! Wie kann ich Ihnen helfen?;Good day! How can I help you?
+A2;Bitte;Please;Kannst du mir bitte helfen?;Can you please help me?
+A2;Tschüss;Goodbye;Tschüss! Bis bald!;Goodbye! See you soon!
+A2;Ja;Yes;Ja, das ist richtig.; Yes, that's correct.
+A2;Nein;No;Nein, danke.; No, thank you.
+A2;Wie;How;Wie geht es dir?;How are you?
+A2;Wo;Where;Wo ist die Bushaltestelle?;Where is the bus stop?
+A2;Ich;I;Ich bin müde.; I am tired.
+A2;Tisch;Table;Das Buch liegt auf dem Tisch.; The book is on the table.
+A2;Haus;House;Wir haben ein neues Haus gekauft.; We bought a new house.
+A2;Auto;Car;Ich fahre jeden Tag mit dem Auto zur Arbeit.; I drive to work by car every day.
+A2;Mann;Man;Der Mann liest die Zeitung.; The man is reading the newspaper.
+A2;Frau;Woman;Die Frau trinkt Kaffee.; The woman is drinking coffee.
+A2;Kind;Child;Das Kind spielt im Park.; The child is playing in the park.
+A2;Essen;Food;Wir gehen heute Abend essen.; We're going out to eat tonight.
+A2;Trinken;Drink;Ich trinke gerne Tee.; I like to drink tea.
+A2;das Haus;house;Das Haus ist groß.; The house is big.
+A2;die Familie;family;Meine Familie ist sehr nett.; My family is very nice.
+A2;die Stadt;city;Berlin ist eine große Stadt.; Berlin is a big city.
+A2;der Freund;friend;Er ist mein bester Freund.; He is my best friend.
+A2;die Arbeit;work;Ich habe viel Arbeit heute.; I have a lot of work today.
+A2;die Schule;school;Die Schule beginnt um 8 Uhr.; School starts at 8 o'clock.
+A2;die Zeit;time;Ich habe keine Zeit heute.; I don't have time today.
+A2;gut;good;Das Essen ist sehr gut.; The food is very good.
+A2;sehen;to see;Ich kann dich sehen.; I can see you.
+A2;gehen;to go;Wir können zusammen gehen.; We can go together.
+A2;die Frage;question;Stell mir eine Frage.; Ask me a question.
+A2;die Antwort;answer;Was ist deine Antwort?; What is your answer?
+A2;das Essen;food;Deutsches Essen ist lecker.; German food is tasty.
+A2;der Tisch;table;Setz dich bitte am Tisch.; Please sit at the table.
+A2;die Reise;trip;Die Reise war sehr interessant.; The trip was very interesting.
+A2;der Tag;day;Heute ist ein schöner Tag.; Today is a beautiful day.
+A2;die Farbe;color;Rot ist meine Lieblingsfarbe.; Red is my favorite color.
+A2;der Name;name;Wie ist dein Name?; What is your name?
+A2;spielen;to play;Kinder spielen gerne draußen.; Children like to play outside.
+A2;das Buch;book;Ich lese gerne Bücher.; I like to read books.
+A2;das Auto;car;Mein Auto ist blau.; My car is blue.
+A2;der Weg;way;Welcher Weg ist richtig?; Which way is correct?
+A2;der Film;movie;Wir sehen einen Film heute.; We are watching a movie today.
+A2;die Musik;music;Ich höre gerne Musik.; I like to listen to music.
+A2;die Blume;flower;Die Blumen sind bunt.; The flowers are colorful.
+A2;der Monat;month;Januar ist der erste Monat.; January is the first month.
+A2;die Uhr;clock/watch;Die Uhr zeigt drei Uhr an.; The clock shows three o'clock.
+A2;das Wetter;weather;Wie ist das Wetter heute?; What is the weather like today?
+A2;sprechen;to speak;Kannst du Deutsch sprechen?; Can you speak German?
+A2;der Kaffee;coffee;Ich trinke gerne Kaffee.; I like to drink coffee.
+A2;die Hand;hand;Schreib es auf die linke Hand.; Write it on your left hand.
+A2;der Park;park;Wir gehen gerne in den Park.; We like to go to the park.
+A2;die Wohnung;apartment;Meine Wohnung ist klein.; My apartment is small.
+A2;der Flughafen;airport;Der Flughafen ist weit entfernt.; The airport is far away.
+A2;die Arbeit;job/work;Mein Vater hat eine neue Arbeit.; My father has a new job.
+A2;die Party;party;Die Party war lustig.; The party was fun.
+A2;der Sommer;summer;Im Sommer ist es warm.; It is warm in the summer.
+A2;das Tier;animal;Katzen sind süße Tiere.; Cats are cute animals.
+A2;der Markt;market;Wir gehen zum Markt einkaufen.; We go shopping at the market.
+A2;die Minute;minute;Warte bitte eine Minute.; Please wait for a minute.
+A2;der Regen;rain;Es regnet heute.; It is raining today.
+A2;die Sonne;sun;Die Sonne scheint hell.; The sun is shining brightly.
+A2;das Meer;sea;Das Meer ist blau.; The sea is blue.
+A2;die Zeitung;newspaper;Ich lese die Zeitung jeden Morgen.; I read the newspaper every morning.
+A2;der Berg;mountain;Der Berg ist hoch.; The mountain is high.
+A2;die Lampe;lamp;Die Lampe leuchtet.; The lamp is lit.
+A2;das Geld;money;Geld kann man nicht essen.; You cannot eat money.
+A2;die Woche;week;Die Woche hat sieben Tage.; The week has seven days.
+A2;der Platz;place;Das ist ein schöner Platz.; This is a beautiful place.
+A2;die Post;post office;Ich gehe zur Post.; I am going to the post office.
+A2;die Suppe;soup;Die Suppe ist heiß.; The soup is hot.
+A2;das Hotel;hotel;Wir übernachten im Hotel.; We are staying at the hotel.
+A2;die Tasse;cup;Ich trinke Tee aus dieser Tasse.; I drink tea from this cup.
+A2;die Flasche;bottle;Die Flasche ist leer.; The bottle is empty.
+A2;der Arzt;doctor;Der Arzt ist sehr nett.; The doctor is very nice.
+A2;die Apotheke;pharmacy;Ich kaufe Medizin in der Apotheke.; I buy medicine at the pharmacy.
+A2;der Bahnhof;train station;Der Bahnhof ist sehr groß.; The train station is very big.
+A2;das Zimmer;room;Mein Zimmer ist klein.; My room is small.
+A2;das Frühstück;breakfast;Ich esse gerne ein herzhaftes Frühstück.; I like to eat a hearty breakfast.
+A2;die Karte;map/card;Die Karte zeigt den Weg.; The map shows the way.
+A2;das Abendessen;dinner;Wir essen um 18 Uhr zu Abend.; We eat dinner at 6 o'clock.
+A2;der Hund;dog;Der Hund ist mein bester Freund.; The dog is my best friend.
+A2;der Parkplatz;parking lot;Der Parkplatz ist voll.; The parking lot is full.
+A2;der Stuhl;chair;Setz dich auf den Stuhl.; Sit on the chair.
+A2;die Jacke;jacket;Die Jacke ist warm.; The jacket is warm.
+A2;der Markt;market;Der Markt hat frisches Gemüse.; The market has fresh vegetables.
+A2;das Geschäft;shop/store;Ich gehe ins Geschäft einkaufen.; I go to the store to shop.
+A2;der Tee;tea;Ich trinke gerne heißen Tee.; I like to drink hot tea.
+A2;die Brille;glasses;Ich trage eine Brille.; I wear glasses.
+A2;die Uhrzeit;time (on the clock);Die Uhrzeit ist wichtig.; The time is important.
+A2;die Telefonnummer;phone number;Gib mir deine Telefonnummer.; Give me your phone number.
+A2;das Obst;fruit;Obst ist gesund.; Fruit is healthy.
+A2;die Hausaufgaben;homework;Ich mache meine Hausaufgaben.; I do my homework.
+A2;der Kühlschrank;refrigerator;Die Milch steht im Kühlschrank.; The milk is in the refrigerator.
+A2;der Kuchen;cake;Der Kuchen schmeckt süß.; The cake tastes sweet.
+A2;der Beruf;profession;Mein Beruf ist Lehrer.; My profession is a teacher.
+A2;das Fenster;window;Öffne das Fenster bitte.; Open the window, please.
+A2;die Bluse;blouse;Die Bluse passt gut.; The blouse fits well.
+A2;die Wäsche;laundry;Ich wasche meine Wäsche.; I wash my laundry.
+A2;die Ampel;traffic light;Die Ampel zeigt Rot.; The traffic light is red.
+A2;der Ball;ball;Wir spielen Fußball mit einem Ball.; We play soccer with a ball.
+A2;die Bluse;blouse;Diese Bluse ist schön.; This blouse is beautiful.
+A2;die Brücke;bridge;Die Brücke führt über den Fluss.; The bridge crosses over the river.
+A2;das Ei;egg;Ich esse gerne gekochte Eier.; I like to eat boiled eggs.
+A2;die Einladung;invitation;Ich habe eine Einladung zur Party.; I have an invitation to the party.
+A2;die Eltern;parents;Meine Eltern sind sehr nett.; My parents are very nice.
+A2;die Fahrt;drive/ride;Die Fahrt mit dem Zug dauert zwei Stunden.; The train ride takes two hours.
+A2;der Fuß;foot;Ich habe mir den Fuß verletzt.; I injured my foot.
+A2;das Gemüse;vegetables;Ich esse gerne frisches Gemüse.; I like to eat fresh vegetables.
+A2;die Geschichte;history/story;Die Geschichte ist interessant.; The story is interesting.
+A2;die Gitarre;guitar;Ich spiele gerne Gitarre.; I like to play the guitar.
+A2;der Himmel;sky;Der Himmel ist heute blau.; The sky is blue today.
+A2;der Hund;dog;Der Hund läuft im Park.; The dog is running in the park.
+A2;die Idee;idea;Das ist eine gute Idee.; That is a good idea.
+A2;das Jahr;year;Ein Jahr hat zwölf Monate.; A year has twelve months.
+A2;das Kind;child;Das Kind spielt im Garten.; The child is playing in the garden.
+A2;die Kirche;church;Die Kirche ist alt.; The church is old.
+A2;der Kühlschrank;refrigerator;Die Milch steht im Kühlschrank.; The milk is in the refrigerator.
+A2;der Kuss;kiss;Sie gibt ihm einen Kuss.; She gives him a kiss.
+A2;der Markt;market;Wir kaufen frisches Obst auf dem Markt.; We buy fresh fruit at the market.
+A2;die Mütze;hat;Im Winter trage ich eine Mütze.; In winter, I wear a hat.
+A2;die Nacht;night;Die Nacht ist dunkel.; The night is dark.
+A2;die Nase;nose;Meine Nase ist kalt.; My nose is cold.
+A2;der Nachbar;neighbor;Unsere Nachbarn sind freundlich.; Our neighbors are friendly.
+A2;der Onkel;uncle;Mein Onkel wohnt in der Stadt.; My uncle lives in the city.
+A2;die Pizza;pizza;Pizza ist mein Lieblingsessen.; Pizza is my favorite food.
+A2;die Postkarte;postcard;Ich schreibe eine Postkarte aus dem Urlaub.; I am writing a postcard from vacation.
+A2;der Radiergummi;eraser;Ich brauche einen Radiergummi für den Fehler.; I need an eraser for the mistake.
+A2;der Rock;skirt;Der Rock ist bunt.; The skirt is colorful.
+A2;das Schiff;ship;Das Schiff fährt auf dem Fluss.; The ship is sailing on the river.
+A2;der Sommer;summer;Im Sommer ist es heiß.; It is hot in the summer.
+A2;die Sprache;language;Deutsch ist eine interessante Sprache.; German is an interesting language.
+A2;die Stunde;hour;Die Stunde hat sechzig Minuten.; An hour has sixty minutes.
+A2;der Tag;day;Der Tag beginnt um sechs Uhr.; The day starts at six o'clock.
+A2;die Tasse;cup;Ich trinke Kaffee aus dieser Tasse.; I drink coffee from this cup.
+A2;das Tier;animal;Tiere sind unsere Freunde.; Animals are our friends.
+A2;die Treppe;stairs;Wir gehen die Treppe hoch.; We go up the stairs.
+A2;der Urlaub;vacation;Im Urlaub reisen wir gerne.; We like to travel on vacation.
+A2;die Vase;vase;Die Vase steht auf dem Tisch.; The vase is on the table.
+A2;das Wasser;water;Trink mehr Wasser für die Gesundheit.; Drink more water for health.
+A2;die Woche;week;Die Woche hat sieben Tage.; The week has seven days.
+A2;das Ziel;goal;Mein Ziel ist es zu lernen.; My goal is to learn.
+A2;das Zimmer;room;Mein Zimmer ist klein.; My room is small.
+A2;der Apfel;apple;Ich esse einen roten Apfel.; I am eating a red apple.
+A2;die Blume;flower;Die Blumen sind schön.; The flowers are beautiful.
+A2;die Butter;butter;Butter ist auf dem Brot.; Butter is on the bread.
+A2;der Computer;computer;Der Computer ist schnell.; The computer is fast.
+A2;der Donner;thunder;Der Donner ist laut.; The thunder is loud.
+A2;die Erde;earth;Die Erde ist unser Planet.; The Earth is our planet.
+A2;die Flasche;bottle;Die Flasche ist leer.; The bottle is empty.
+A2;die Freude;joy;Die Freude ist groß.; The joy is great.
+A2;das Gesicht;face;Dein Gesicht ist schön.; Your face is beautiful.
+A2;die Hausaufgaben;homework;Mache deine Hausaufgaben.; Do your homework.
+A2;das Hemd;shirt;Das Hemd ist blau.; The shirt is blue.
+A2;der Hund; the dog; Der Hund spielt im Garten.; The dog is playing in the garden.
+A2;das Haus; the house; Das Haus hat drei Zimmer.; The house has three rooms.
+A2;das Essen; the food; Das Essen ist lecker.; The food is delicious.
+A2;das Trinken; the drink; Das Trinken ist kalt.; The drink is cold.
+A2;der Freund; the friend; Mein Freund wohnt in Berlin.; My friend lives in Berlin.
+A2;die Schule; the school; Die Kinder sind in der Schule.; The children are in school.
+A2;das Buch; the book; Das Buch liegt auf dem Tisch.; The book is on the table.
+A2;das Auto; the car; Das Auto ist schnell.; The car is fast.
+A2;der Tisch; the table; Der Tisch ist groß.; The table is big.
+A2;das Kochen; the cooking; Das Kochen macht Spaß.; Cooking is fun.
+A2;die Katze; the cat; Die Katze schläft.; The cat is sleeping.
+A2;das Wetter; the weather; Das Wetter ist heute schön.; The weather is nice today.
+A2;kaufen; to buy; Ich kaufe ein neues Buch.; I buy a new book.
+A2;lernen; to learn; Wir lernen Deutsch.; We learn German.
+A2;der Apfel; the apple; Der Apfel ist rot.; The apple is red.
+A2;schreiben; to write; Sie schreibt einen Brief.; She writes a letter.
+A2;lesen; to read; Ich lese ein Buch.; I read a book.
+A2;sprechen; to speak; Er spricht Englisch und Deutsch.; He speaks English and German.
+A2;die Straße; the street; Die Straße ist lang.; The street is long.
+A2;die Stadt; the city; Die Stadt ist groß.; The city is big.
+B1;der Tisch;the table;Der Tisch ist aus Holz.; The table is made of wood.
+B1;die Wohnung;the apartment;Meine Wohnung ist groß.; My apartment is large.
+B1;die Reise;the journey;Die Reise dauert drei Stunden.; The journey takes three hours.
+B1;die Freizeit;leisure time;Ich verbringe meine Freizeit gerne draußen.; I like to spend my leisure time outdoors.
+B1;das Abendessen;dinner;Wir essen um 19 Uhr Abendessen.; We have dinner at 7 PM.
+B1;die Arbeit;work;Meine Arbeit beginnt um 9 Uhr morgens.; My work starts at 9 AM.
+B1;das Buch;book;Ich lese gerne Bücher in meiner Freizeit.; I enjoy reading books in my free time.
+B1;die Stadt;city;Berlin ist eine große Stadt in Deutschland.; Berlin is a large city in Germany.
+B1;das Problem;problem;Wir müssen das Problem lösen.; We need to solve the problem.
+B1;das Geschenk;gift;Ich habe ein Geschenk für dich.; I have a gift for you.
+B1;die Rechnung;bill;Können Sie bitte die Rechnung bringen?; Can you please bring the bill?
+B1;der Sommer;summer;Im Sommer liebe ich es, am Strand zu sein.; In the summer, I love being at the beach.
+B1;der Film;movie;Wir gehen heute Abend ins Kino, um einen Film zu sehen.; We're going to the cinema tonight to watch a movie.
+B1;die Lösung;solution;Die beste Lösung ist oft die einfachste.; The best solution is often the simplest.
+B1;der Kaffee;coffee;Morgens trinke ich immer eine Tasse Kaffee.; I always have a cup of coffee in the morning.
+B1;die Zeitung;newspaper;Ich lese die Zeitung, um über aktuelle Nachrichten informiert zu sein.; I read the newspaper to stay informed about current news.
+B1;der Freund;friend;Mein bester Freund heißt Max.; My best friend's name is Max.
+B1;der Einkauf;shopping;Am Samstag mache ich gerne Einkäufe.; I like to go shopping on Saturdays.
+B1;die Blume;flower;Meine Lieblingsblume ist die Rose.; My favorite flower is the rose.
+B1;der Urlaub;vacation;Im Sommer machen wir oft einen Urlaub am Meer.; In the summer, we often take a vacation by the sea.
+B1;das Ziel;goal;Mein Ziel ist es, Deutsch fließend zu sprechen.; My goal is to speak German fluently.
+B1;die Krankheit;illness;Bei einer Krankheit sollte man zum Arzt gehen.; In case of illness, one should go to the doctor.
+B1;der Frühling;spring;Im Frühling blühen die Blumen.; In spring, the flowers bloom.
+B1;der Sport;sport;Ich treibe regelmäßig Sport, um fit zu bleiben.; I engage in sports regularly to stay fit.
+B1;die Geschichte;history;Die Geschichte Europas ist sehr interessant.; The history of Europe is very interesting.
+B1;das Abenteuer;adventure;Reisen bringt oft Abenteuer mit sich.; Traveling often involves adventures.
+B1;die Apotheke;pharmacy;Ich gehe zur Apotheke, um Medikamente zu kaufen.; I go to the pharmacy to buy medication.
+B1;das Baby;baby;Unser Baby schläft gut in der Nacht.; Our baby sleeps well at night.
+B1;der Chef;boss;Mein Chef ist sehr nett.; My boss is very kind.
+B1;der Computer;computer;Ich arbeite den ganzen Tag am Computer.; I work on the computer all day.
+B1;der Kühlschrank;refrigerator;Milch gehört in den Kühlschrank.; Milk belongs in the refrigerator.
+B1;der Plan;plan;Wir haben einen Plan für das Wochenende.; We have a plan for the weekend.
+B1;der Schüler;student;Die Schüler lernen Deutsch in der Schule.; The students learn German in school.
+B1;das Wetter;weather;Das Wetter heute ist sonnig und warm.; The weather today is sunny and warm.
+B1;der Regen;rain;Der Regen hat den Garten bewässert.; The rain watered the garden.
+B1;die Brücke;bridge;Die Brücke führt über den Fluss.; The bridge crosses over the river.
+B1;die Karte;map;Wir schauen auf der Karte nach dem Weg.; We look at the map to find the way.
+B1;die Suppe;soup;Im Winter esse ich gerne heiße Suppe.; In winter, I like to eat hot soup.
+B1;die Straße;street;Die Straße ist voller Menschen.; The street is full of people.
+B1;der Flughafen;airport;Wir treffen uns am Flughafen.; We'll meet at the airport.
+B1;das Hotel;hotel;Das Hotelzimmer hat einen schönen Ausblick.; The hotel room has a beautiful view.
+B1;das Telefon;telephone;Ich rufe dich später an, wenn ich zu Hause bin.; I'll call you later when I'm at home.
+B1;das Gespräch;conversation;Wir hatten ein interessantes Gespräch gestern.; We had an interesting conversation yesterday.
+B1;die Antwort;answer;Kannst du mir die Antwort sagen?; Can you tell me the answer?
+B1;das Museum;museum;Am Wochenende besuchen wir das Museum.; We're visiting the museum this weekend.
+B1;die Medizin;medicine;Die Medizin hilft bei Kopfschmerzen.; Medicine helps with headaches.
+B1;der Hund;dog;Unser Hund ist sehr verspielt.; Our dog is very playful.
+B1;die Katze;cat;Die Katze liegt auf der Fensterbank.; The cat is lying on the windowsill.
+B1;das Fahrrad;bicycle;Im Sommer fahre ich gerne Fahrrad.; I enjoy riding a bicycle in the summer.
+B1;die Universität;university;Sie studiert an der Universität.; She is studying at the university.
+B1;der Kellner;waiter;Der Kellner bringt die Speisekarte.; The waiter brings the menu.
+B1;das Auto;car;Mein Auto ist blau und sehr bequem.; My car is blue and very comfortable.
+B1;das Abendkleid;evening dress;Sie trägt ein elegantes Abendkleid.; She is wearing an elegant evening dress.
+B1;der Freund;boyfriend;Mein Freund und ich gehen heute ins Kino.; My boyfriend and I are going to the cinema today.
+B1;die Freundin;girlfriend;Meine Freundin ist sehr nett.; My girlfriend is very kind.
+B1;der Geburtstag;birthday;Wir feiern heute meinen Geburtstag.; We are celebrating my birthday today.
+B1;die Hochzeit;wedding;Die Hochzeit findet im Sommer statt.; The wedding takes place in the summer.
+B1;das Geschenk;present;Das Geschenk ist schön verpackt.; The present is nicely wrapped.
+B1;die Bluse;blouse;Die Bluse passt gut zu der Hose.; The blouse goes well with the pants.
+B1;das Abendessen;supper;Am Abendessen gibt es Pasta und Salat.; For supper, there is pasta and salad.
+B1;die Brille;glasses;Ich trage eine Brille, um besser zu sehen.; I wear glasses to see better.
+B1;der Markt;market;Am Samstag gehe ich gerne auf den Markt.; I like to go to the market on Saturdays.
+B1;das Problem;issue;Das ist ein ernsthaftes Problem, das gelöst werden muss.; That is a serious issue that needs to be solved.
+B1;der Chef;supervisor;Mein Chef gibt mir gute Ratschläge.; My supervisor gives me good advice.
+B1;das Programm;program;Das Programm beginnt um 8 Uhr abends.; The program starts at 8 PM.
+B1;die Übung;exercise;Mach täglich Sprachübungen, um besser zu werden.; Do language exercises daily to improve.
+B1;der Urlaubsort;holiday destination;Unser Urlaubsort war am Meer.; Our holiday destination was by the sea.
+B1;das Abenteuer;adventure;Reisen bringt oft Abenteuer mit sich.; Traveling often involves adventures.
+B1;der Ausflug;outing;Wir planen einen Ausflug in die Berge.; We are planning an outing to the mountains.
+B1;der Garten;garden;Im Garten blühen viele Blumen im Frühling.; Many flowers bloom in the garden in spring.
+B1;die Landschaft;landscape;Die Landschaft in der Schweiz ist wunderschön.; The landscape in Switzerland is beautiful.
+B1;das Portemonnaie;wallet;Ich habe mein Portemonnaie in der Tasche.; I have my wallet in the bag.
+B1;die Reise;trip;Die Reise nach Paris war sehr aufregend.; The trip to Paris was very exciting.
+B1;das Abendkleid;evening dress;Sie trägt ein elegantes Abendkleid.; She is wearing an elegant evening dress.
+B1;das Instrument;instrument;Ich spiele ein Musikinstrument.; I play a musical instrument.
+B1;die Konzert;concert;Wir gehen heute Abend zu einem Konzert.; We're going to a concert tonight.
+B1;die Veranstaltung;event;Die Veranstaltung beginnt um 19 Uhr.; The event starts at 7 PM.
+B1;der Kuchen;cake;Am Geburtstag gibt es immer einen Kuchen.; There is always cake on birthdays.
+B1;der Rucksack;backpack;Ich trage meinen Rucksack auf dem Rücken.; I carry my backpack on my back.
+B1;die Gelegenheit;opportunity;Das ist eine gute Gelegenheit, Deutsch zu üben.; This is a good opportunity to practice German.
+B1;das Hemd;shirt;Ich ziehe ein weißes Hemd zur Arbeit an.; I wear a white shirt to work.
+B1;das Gesicht;face;Ihr Gesicht strahlt Freude aus.; Her face radiates joy.
+B1;die Landschaft;countryside;Ich liebe die Landschaft außerhalb der Stadt.; I love the countryside outside the city.
+B1;das Messer;knife;Das Messer schneidet gut.; The knife cuts well.
+B1;der Nachbar;neighbor;Mein Nachbar ist freundlich und hilfsbereit.; My neighbor is friendly and helpful.
+B1;das Obst;fruit;Obst ist gesund und lecker.; Fruit is healthy and delicious.
+B1;der Regenschirm;umbrella;Nimm einen Regenschirm mit, es könnte regnen.; Take an umbrella, it might rain.
+B1;die Sehenswürdigkeit;sightseeing;Wir machen Sightseeing in der Stadt.; We are sightseeing in the city.
+B1;die Sonnenbrille;sunglasses;Trage eine Sonnenbrille, um deine Augen zu schützen.; Wear sunglasses to protect your eyes.
+B1;der Stau;traffic jam;Es gibt einen Stau auf der Autobahn.; There is a traffic jam on the highway.
+B1;das Ticket;ticket;Hast du das Ticket für den Zug?; Do you have the ticket for the train?
+B1;der Traum;dream;Ich hatte einen schönen Traum letzte Nacht.; I had a beautiful dream last night.
+B1;die U-Bahn;subway;Die U-Bahn ist ein schnelles Verkehrsmittel.; The subway is a fast means of transportation.
+B1;das Verkehrsmittel;means of transportation;Es gibt viele Verkehrsmittel in der Stadt.; There are many means of transportation in the city.
+B1;die Vorstellung;performance;Die Vorstellung im Theater war beeindruckend.; The performance at the theater was impressive.
+B1;die Wäsche;laundry;Ich mache heute die Wäsche.; I am doing the laundry today.
+B1;die Wirkung;effect;Die Wirkung der Medizin setzt schnell ein.; The effect of the medicine kicks in quickly.
+B1;der Witz;joke;Er erzählte einen lustigen Witz.; He told a funny joke.
+B1;die Zutat;ingredient;Die wichtigste Zutat im Kuchen ist Zucker.; The main ingredient in the cake is sugar.
+B1;das Haustier;pet;Ein Haustier kann einem viel Freude bringen.; A pet can bring a lot of joy.
+B1;die Ernährung;nutrition;Gesunde Ernährung ist wichtig für die Gesundheit.; Healthy nutrition is important for health.
+B1;das Geschirr;dishes;Nach dem Essen spüle ich das Geschirr ab.; After eating, I wash the dishes.
+B1;die Umwelt;environment;Es ist wichtig, die Umwelt zu schützen.; It is important to protect the environment.
+B1;das Abendessen;dinner;Am Abendessen gibt es Pasta und Salat.; For dinner, there is pasta and salad.
+B1;das Getränk;drink;Im Sommer trinke ich gerne erfrischende Getränke.; In summer, I like to drink refreshing beverages.
+B1;der Anruf;phone call;Ich erwarte einen wichtigen Anruf heute Nachmittag.; I'm expecting an important phone call this afternoon.
+B1;die Bank;bench;Setz dich auf die Bank und genieße die Aussicht.; Sit on the bench and enjoy the view.
+B1;die Bäckerei;bakery;Die frischen Brötchen kommen aus der Bäckerei.; The fresh rolls come from the bakery.
+B1;der Baum;tree;Der Baum steht im Garten und spendet Schatten.; The tree is in the garden and provides shade.
+B1;die Bibliothek;library;In der Bibliothek kann man Bücher ausleihen.; In the library, you can borrow books.
+B1;das Boot;boat;Im Sommer fahren wir gerne mit dem Boot auf dem See.; In summer, we like to go boating on the lake.
+B1;das Café;cafe;Am Wochenende treffen wir uns im Café.; On the weekend, we meet at the cafe.
+B1;die Einladung;invitation;Ich habe eine Einladung zu einer Geburtstagsfeier bekommen.; I received an invitation to a birthday party.
+B1;die Feier;celebration;Die Feier findet im Garten statt.; The celebration takes place in the garden.
+B1;die Flasche;bottle;Das Wasser in der Flasche ist kalt.; The water in the bottle is cold.
+B1;das Foto;photo;Das Foto erinnert mich an einen schönen Urlaub.; The photo reminds me of a wonderful vacation.
+B1;der Friseur;hairdresser;Ich gehe heute zum Friseur, um mir die Haare schneiden zu lassen.; I'm going to the hairdresser today to get my hair cut.
+B1;die Garage;garage;Das Auto steht in der Garage.; The car is in the garage.
+B1;der Gast;guest;Die Gäste sind herzlich willkommen.; The guests are warmly welcome.
+B1;der Geburtstag;birthday;Wir feiern heute den Geburtstag meines Bruders.; We are celebrating my brother's birthday today.
+B1;die Geige;violin;Sie spielt die Geige in einem Orchester.; She plays the violin in an orchestra.
+B1;das Gewitter;thunderstorm;Das Gewitter hat mit starkem Regen begonnen.; The thunderstorm started with heavy rain.
+B1;das Glück;luck;Viel Glück für deine Prüfung morgen!; Good luck on your exam tomorrow!
+B1;der Herbst;autumn;Die Blätter fallen im Herbst von den Bäumen.; Leaves fall from the trees in autumn.
+B1;das Hobby;hobby;Mein Hobby ist das Sammeln von Briefmarken.; My hobby is collecting stamps.
+B1;der Kaffeehaus;coffeehouse;Das Kaffeehaus ist ein gemütlicher Ort zum Entspannen.; The coffeehouse is a cozy place to relax.
+B1;der Kalender;calendar;Trage wichtige Termine in den Kalender ein.; Enter important dates in the calendar.
+B1;die Kerze;candle;Zum Geburtstag zünden wir Kerzen auf der Torte an.; For birthdays, we light candles on the cake.
+B1;der Kühlschrank;fridge;Milch gehört in den Kühlschrank.; Milk belongs in the fridge.
+B1;der Markt;market;Am Samstag gehe ich gerne auf den Markt.; I like to go to the market on Saturdays.
+B1;das Mehl;flour;Für den Kuchen brauchen wir Mehl und Zucker.; For the cake, we need flour and sugar.
+B1;die Mütze;cap;Im Winter trage ich eine warme Mütze.; In winter, I wear a warm cap.
+B1;der Ofen;oven;Der Kuchen backt im Ofen.; The cake is baking in the oven.
+B1;die Prüfung;exam;Die Prüfung findet am Freitag statt.; The exam is on Friday.
+B1;das Rad;wheel;Das Fahrrad hat zwei Räder.; The bicycle has two wheels.
+B1;der Reiseführer;travel guide;Der Reiseführer gibt Tipps für die beste Route.; The travel guide provides tips for the best route.
+B1;der Rock;skirt;Im Sommer trage ich gerne einen Rock.; In summer, I like to wear a skirt.
+B1;die Sandalen;sandals;Im Urlaub trage ich meistens Sandalen.; I usually wear sandals on vacation.
+B1;die Schokolade;chocolate;Schokolade ist meine Lieblingssüßigkeit.; Chocolate is my favorite sweet treat.
+B1;die Schulter;shoulder;Leg das schwere Buch auf meine Schulter.; Put the heavy book on my shoulder.
+B1;der Spiegel;mirror;Im Badezimmer hängt ein großer Spiegel.; There is a large mirror in the bathroom.
+B1;der Stift;pen;Ich schreibe gerne mit einem blauen Stift.; I like to write with a blue pen.
+B1;die Stunde;hour;Die Stunde hat 60 Minuten.; An hour has 60 minutes.
+B1;die Tasche;bag;Ich habe meine Brieftasche in der Tasche.; I have my wallet in the bag.
+B1;die Teekanne;teapot;Die Teekanne steht auf dem Tisch.; The teapot is on the table.
+B1;der Teppich;carpet;Der Teppich liegt im Wohnzimmer.; The carpet is in the living room.
+B1;das Tier;animal;Der Zoo hat viele verschiedene Tiere.; The zoo has many different animals.
+B1;der Tipp;tip;Danke für den Tipp, das war sehr hilfreich.; Thanks for the tip, that was very helpful.
+B1;das Abitur;high school diploma;Nach dem Abitur möchte ich studieren.; After high school, I want to go to college.
+B1;die Apfelsine;orange (fruit);Ich esse gerne eine Apfelsine zum Frühstück.; I like to eat an orange for breakfast.
+B1;der Ball;ball;Wir spielen Fußball im Park mit einem Ball.; We play soccer in the park with a ball.
+B1;die Butter;butter;Butter schmeckt gut auf frischem Brot.; Butter tastes good on fresh bread.
+B1;die Brille;glasses;Ich trage eine Brille, um besser zu sehen.; I wear glasses to see better.
+B1;der Computer;computer;Ich arbeite den ganzen Tag am Computer.; I work on the computer all day.
+B1;die Decke;blanket;Im Winter braucht man eine warme Decke.; In winter, you need a warm blanket.
+B1;das Ei;egg;Für das Rührei benötigst du Eier.; You need eggs for scrambled eggs.
+B1;der Fluss;river;Der Fluss fließt durch die Stadt.; The river flows through the city.
+B1;der Geburtstag;birthday;Wir feiern heute den Geburtstag meiner Schwester.; We are celebrating my sister's birthday today.
+B1;die Gitarre;guitar;Er spielt gerne Gitarre in seiner Freizeit.; He enjoys playing the guitar in his free time.
+B1;der Hammer;hammer;Mit dem Hammer kannst du Nägel einschlagen.; You can drive nails with the hammer.
+B1;die Handtasche;handbag;Sie trägt immer eine Handtasche bei sich.; She always carries a handbag with her.
+B1;der Himmel;sky;Der Himmel ist heute wolkenlos.; The sky is cloudless today.
+B1;das Kino;cinema;Am Wochenende gehen wir ins Kino.; We're going to the cinema on the weekend.
+B1;die Lampe;lamp;Die Lampe spendet warmes Licht.; The lamp emits warm light.
+B1;die Marmelade;jam;Marmelade schmeckt gut auf dem Toast.; Jam tastes good on toast.
+B1;das Netz;net;Die Volleyballspieler spielen mit einem Netz.; The volleyball players play with a net.
+B1;der Ohrring;earring;Sie trägt schöne Ohrringe aus Gold.; She wears beautiful gold earrings.
+B1;das Päckchen;parcel;Das Päckchen wurde heute geliefert.; The parcel was delivered today.
+B1;das Quadrat;square;Ein Quadrat hat vier gleich lange Seiten.; A square has four equal-length sides.
+B1;die Rose;rose;Die Rose ist eine romantische Blume.; The rose is a romantic flower.
+B1;die Socke;sock;Im Winter trage ich warme Socken.; In winter, I wear warm socks.
+B1;der Tee;tea;Ich trinke gerne heißen Tee im Winter.; I like to drink hot tea in winter.
+B1;die Uhr;watch;Schau auf die Uhr, es ist Zeit zu gehen.; Look at the watch, it's time to go.
+B1;der Vogel;bird;Der Vogel singt im Baum.; The bird is singing in the tree.
+B1;der Wagen;car;Das ist ein schneller Wagen.; That is a fast car.
+B1;der Zahn;tooth;Putze deine Zähne zweimal am Tag.; Brush your teeth twice a day.
+B1;das Instrument;instrument;Ich spiele ein Musikinstrument.; I play a musical instrument.
+B1;der Kaffee;coffee;Morgens trinke ich immer eine Tasse Kaffee.; I always have a cup of coffee in the morning.
+B1;der Markt;market;Am Samstag gehe ich gerne auf den Markt.; I like to go to the market on Saturdays.
+B1;das Papier;paper;Ich schreibe einen Brief auf das weiße Papier.; I am writing a letter on the white paper.
+B1;der Regenbogen;rainbow;Nach dem Regen erscheint oft ein Regenbogen.; A rainbow often appears after the rain.
+B1;das Spielzeug;toy;Die Kinder spielen mit buntem Spielzeug.; The children play with colorful toys.
+B1;die Tomate;tomato;Die Tomate ist eine rote Gemüsesorte.; The tomato is a red vegetable.
+B1;das Universum;universe;Das Universum ist unendlich groß.; The universe is infinitely large.
+B1;die Wolke;cloud;Die Wolken ziehen schnell über den Himmel.; The clouds are moving quickly across the sky.
+B1;das Zelt;tent;Im Sommer übernachten wir gerne im Zelt.; In summer, we like to camp in a tent.
+B1;der Anzug;suit;Er trägt einen eleganten Anzug zur Hochzeit.; He is wearing a stylish suit for the wedding.
+B1;die Bluse;blouse;Die Bluse passt gut zu der Hose.; The blouse goes well with the pants.
+B1;die Creme;cream;Diese Creme ist gut für die Haut.; This cream is good for the skin.
+B1;der Ausweis;ID card;Vergiss nicht, deinen Ausweis mitzunehmen.; Don't forget to bring your ID card.
+B1;die Blume;flower;Im Frühling blühen viele bunte Blumen.; Many colorful flowers bloom in spring.
+B1;das Chaos;chaos;Nach der Party herrschte Chaos im Zimmer.; There was chaos in the room after the party.
+B1;die Decke;ceiling;Die Decke in meinem Zimmer ist blau gestrichen.; The ceiling in my room is painted blue.
+B1;das Echo;echo;In den Bergen hört man oft ein Echo.; In the mountains, you often hear an echo.
+B1;die Fähre;ferry;Wir nehmen die Fähre, um zur Insel zu gelangen.; We take the ferry to get to the island.
+B1;das Gemüse;vegetables;Gemüse ist gesund und enthält viele Vitamine.; Vegetables are healthy and contain many vitamins.
+B1;das Handtuch;towel;Nach dem Schwimmen trockne ich mich mit einem Handtuch ab.; After swimming, I dry myself with a towel.
+B1;die Insel;island;Auf der Insel gibt es schöne Strände.; The island has beautiful beaches.
+B1;der Juni;June;Im Juni beginnt der Sommer.; June marks the beginning of summer.
+B1;die Kamera;camera;Mit der Kamera kann man Fotos machen.; With the camera, you can take photos.
+B1;die Laterne;lantern;Die Laterne leuchtet in der Dunkelheit.; The lantern lights up in the darkness.
+B1;der Mond;moon;In der Nacht leuchtet der Mond am Himmel.; At night, the moon shines in the sky.
+B1;die Mütze;cap;Im Winter trage ich eine warme Mütze.; In winter, I wear a warm cap.
+B1;die Nudeln;noodles;Spaghetti sind eine beliebte Art von Nudeln.; Spaghetti are a popular type of noodles.
+B1;das Orchester;orchestra;Das Orchester spielt eine wunderschöne Melodie.; The orchestra is playing a beautiful melody.
+B1;der Park;park;Wir machen einen Spaziergang im Park.; We take a walk in the park.
+B1;der Quatsch;nonsense;Das, was du erzählst, ist totaler Quatsch.; What you're saying is complete nonsense.
+B1;der Ratschlag;advice;Ich habe einen guten Ratschlag für dich.; I have good advice for you.
+B1;der Sonnenschein;sunshine;Der Sonnenschein macht die Stimmung besser.; Sunshine improves the mood.
+B1;der Teller;plate;Auf dem Teller liegt ein leckeres Abendessen.; There is a delicious dinner on the plate.
+B1;der Unfall;accident;Der Autounfall passierte auf der Autobahn.; The car accident happened on the highway.
+B1;der Vogelkäfig;birdcage;Im Vogelkäfig singt ein bunter Papagei.; In the birdcage, a colorful parrot is singing.
+B1;die Wäsche;laundry;Ich mache heute die Wäsche.; I am doing the laundry today.
+B1;der Zirkus;circus;Die Kinder sind begeistert vom Besuch im Zirkus.; The children are excited about the visit to the circus.
+B1;die Erde;earth;Die Erde ist der dritte Planet von der Sonne.; Earth is the third planet from the sun.
+B1;der Frühling;spring;Im Frühling blühen die Blumen.; In spring, the flowers bloom.
+B1;das Geschenkpapier;wrapping paper;Das Geschenkpapier ist bunt und festlich.; The wrapping paper is colorful and festive.
+B1;das Hausmittel;home remedy;Ein Hausmittel gegen Erkältung ist heißer Tee.; A home remedy for a cold is hot tea.
+B1;die Innenstadt;downtown;In der Innenstadt gibt es viele Geschäfte.; There are many shops in downtown.
+B1;die Jacke;jacket;Im Winter trage ich eine warme Jacke.; In winter, I wear a warm jacket.
+B1;der Käse;cheese;Deutschland ist bekannt für seinen Käse.; Germany is known for its cheese.
+B1;das Lächeln;smile;Ein Lächeln kann die Stimmung heben.; A smile can lift the mood.
+B1;der Mangel;deficiency;Ein Mangel an Vitaminen kann zu Problemen führen.; A deficiency in vitamins can lead to problems.
+B1;das Nachbarhaus;neighbor's house;Das Nachbarhaus hat einen schönen Garten.; The neighbor's house has a beautiful garden.
+B1;der Ort;place;Ein ruhiger Ort ist perfekt zum Lesen.; A quiet place is perfect for reading.
+B1;der Pfeffer;pepper;Pfeffer gibt dem Essen eine würzige Note.; Pepper adds a spicy flavor to the food.
+B1;die Qualität;quality;Die Qualität dieses Produkts ist sehr gut.; The quality of this product is very good.
+B1;der Regenschirm;umbrella;Nimm einen Regenschirm mit, es könnte regnen.; Take an umbrella, it might rain.
+B1;das Schloss;castle;Das Schloss steht auf dem Hügel.; The castle is on the hill.
+B1;die Taschenlampe;flashlight;Bei Stromausfall benutze ich eine Taschenlampe.; In a power outage, I use a flashlight.
+B1;die Unterkunft;accommodation;Die Unterkunft im Hotel war komfortabel.; The accommodation at the hotel was comfortable.
+B1;die Verabredung;appointment;Wir haben eine Verabredung um 15 Uhr.; We have an appointment at 3 PM.
+B1;das Wetter;weather;Das Wetter heute ist sonnig und warm.; The weather today is sunny and warm.
+B1;der Zahnarzt;dentist;Der Zahnarzt kontrolliert die Zähne.; The dentist checks the teeth.
+B1; die Entscheidung; the decision; Die Entscheidung zu treffen, war nicht leicht.; Making the decision was not easy.
+B1; verbessern; to improve; Ich möchte mein Deutsch verbessern.; I want to improve my German.
+B1; die Gelegenheit; the opportunity; Diese Gelegenheit kommt nicht oft.; This opportunity does not come often.
+B1; verantwortlich; responsible; Er ist für das Projekt verantwortlich.; He is responsible for the project.
+B1; die Beziehung; the relationship; Sie haben eine starke Beziehung.; They have a strong relationship.
+B1; der Fortschritt; the progress; Wir sehen großen Fortschritt in deiner Arbeit.; We see great progress in your work.
+B1; die Herausforderung; the challenge; Das ist eine interessante Herausforderung.; This is an interesting challenge.
+B1; das Verständnis; the understanding; Das Verständnis für andere Kulturen ist wichtig.; Understanding other cultures is important.
+B1; der Vorschlag; the suggestion; Dein Vorschlag klingt gut.; Your suggestion sounds good.
+B1; überzeugen; to convince; Ich muss meinen Chef überzeugen.; I need to convince my boss.
+B1; die Fähigkeit; the ability; Sie hat die Fähigkeit, schnell zu lernen.; She has the ability to learn quickly.
+B1; der Erfolg; the success; Der Erfolg kam nach vielen Jahren.; Success came after many years.
+B1; der Zweck; the purpose; Der Zweck dieses Meetings ist klar.; The purpose of this meeting is clear.
+B1; die Umgebung; the environment; Die Umgebung hier ist sehr friedlich.; The environment here is very peaceful.
+B1; die Untersuchung; the investigation; Die Untersuchung wird noch fortgesetzt.; The investigation is still ongoing.
+B1; die Maßnahme; the measure; Diese Maßnahmen werden die Situation verbessern.; These measures will improve the situation.
+B1; die Wirkung; the effect; Die Wirkung des Medikaments ist stark.; The effect of the medication is strong.
+B1; die Gelegenheit; the opportunity; Wir sollten diese Gelegenheit nutzen.; We should seize this opportunity.
+B1; der Begriff; the concept; Dieser Begriff ist in der Physik sehr wichtig.; This concept is very important in physics.
+B1; die Eigenschaft; the characteristic; Eine wichtige Eigenschaft von ihm ist Ehrlichkeit.; An important characteristic of his is honesty.
+B1; die Anforderung; the requirement; Die Anforderung für den Job ist Erfahrung.; The requirement for the job is experience.
+B1; berücksichtigen; to consider; Wir müssen alle Faktoren berücksichtigen.; We must consider all factors.
+B1; der Beitrag; the contribution; Ihr Beitrag zum Projekt war entscheidend.; Her contribution to the project was crucial.
+B1; bewältigen; to cope with; Er muss viele Herausforderungen bewältigen.; He has to cope with many challenges.
+B1; die Diskussion; the discussion; Die Diskussion war sehr informativ.; The discussion was very informative.
+B1; einsetzen; to implement; Wir setzen neue Technologien ein.; We are implementing new technologies.
+B1; die Frist; the deadline; Die Frist für das Projekt ist nächste Woche.; The deadline for the project is next week.
+B1; gestalten; to design; Sie gestaltet ihr Zimmer selbst.; She designs her room herself.
+B1; die Leistung; the performance; Seine Leistung in der Schule hat sich verbessert.; His performance in school has improved.
+B1; der Bereich; the area; In diesem Bereich gibt es viele Möglichkeiten.; There are many opportunities in this area.
+B1; die Maßnahme; the measure; Diese Maßnahme wird die Sicherheit erhöhen.; This measure will increase safety.
+B1; der Umgang; the handling; Der Umgang mit Kunden ist wichtig.; Handling customers is important.
+B1; verbinden; to connect; Dieser Weg verbindet die beiden Städte.; This path connects the two cities.
+B1; die Wirtschaft; the economy; Die Wirtschaft wächst stetig.; The economy is growing steadily.
+B1; die Zusage; the commitment; Er gab uns seine Zusage für das Projekt.; He gave us his commitment for the project.
+B1; das Merkmal; the feature; Ein wichtiges Merkmal des Produkts ist seine Qualität.; An important feature of the product is its quality.
+B1; der Ansatz; the approach; Ihr Ansatz zur Lösung des Problems ist innovativ.; Her approach to solving the problem is innovative.
+B1; die Daten; the data; Die Daten müssen analysiert werden.; The data must be analyzed.
+B1; die Auswirkung; the impact; Die Auswirkung der Entscheidung ist noch unklar.; The impact of the decision is still unclear.
+B1; die Erkenntnis; the insight; Diese Studie bietet wichtige Erkenntnisse.; This study provides important insights.
+B2;die Absicht;intention;Meine Absicht ist es, Deutsch fließend zu sprechen.; My intention is to speak German fluently.
+B2;der Algorithmus;algorithm;Der Algorithmus löst komplexe mathematische Probleme.; The algorithm solves complex mathematical problems.
+B2;die Analyse;analysis;Die Analyse der Daten liefert interessante Ergebnisse.; The analysis of the data yields interesting results.
+B2;der Bereich;area;In diesem Bereich gibt es viele Möglichkeiten zur Weiterbildung.; In this area, there are many opportunities for further education.
+B2;die Behörde;authority;Die Behörde ist für die Kontrolle der Einhaltung von Gesetzen zuständig.; The authority is responsible for monitoring compliance with laws.
+B2;die Bilanz;balance sheet;Die Bilanz zeigt die finanzielle Situation des Unternehmens.; The balance sheet shows the financial situation of the company.
+B2;die Chemie;chemistry;Die Chemie erforscht die Struktur und Eigenschaften von Stoffen.; Chemistry explores the structure and properties of substances.
+B2;das Defizit;deficit;Das Unternehmen hat ein finanzielles Defizit zu verzeichnen.; The company has a financial deficit to report.
+B2;die Differenz;difference;Die Differenz zwischen den beiden Zahlen ist gering.; The difference between the two numbers is small.
+B2;die Effizienz;efficiency;Die Effizienz des Prozesses wurde durch neue Technologien gesteigert.; The efficiency of the process has been increased through new technologies.
+B2;die Empfehlung;recommendation;Die Empfehlung des Arztes war, mehr Sport zu treiben.; The doctor's recommendation was to do more sports.
+B2;die Entwicklung;development;Die Entwicklung neuer Technologien verändert die Gesellschaft.; The development of new technologies is changing society.
+B2;die Fähigkeit;ability;Eine wichtige Fähigkeit im Beruf ist die Teamarbeit.; An important ability in the job is teamwork.
+B2;die Gebühr;fee;Die Gebühr für die Mitgliedschaft muss monatlich bezahlt werden.; The fee for membership must be paid monthly.
+B2;der Impuls;impulse;Ein plötzlicher Impuls veranlasste sie, ihre Meinung zu ändern.; A sudden impulse prompted her to change her mind.
+B2;die Initiative;initiative;Ergriff die Initiative und schlug eine Lösung für das Problem vor.; Took the initiative and proposed a solution to the problem.
+B2;das Konzept;concept;Das Konzept des neuen Produkts wurde von Experten erstellt.; The concept of the new product was created by experts.
+B2;die Krise;crisis;Das Unternehmen steckt in einer wirtschaftlichen Krise.; The company is in an economic crisis.
+B2;die Kultur;culture;Die Kultur eines Landes prägt das Verhalten der Menschen.; The culture of a country shapes the behavior of its people.
+B2;der Kurs;course;Der Kurs umfasst verschiedene Module zur beruflichen Weiterbildung.; The course includes various modules for professional development.
+B2;das Limit;limit;Das Limit für den Datenverbrauch wurde überschritten.; The limit for data consumption has been exceeded.
+B2;die Maßnahme;measure;Die Maßnahme wurde ergriffen, um die Sicherheit zu gewährleisten.; The measure was taken to ensure safety.
+B2;das Netzwerk;network;Ein gut funktionierendes Netzwerk ist für die berufliche Karriere wichtig.; A well-functioning network is important for a professional career.
+B2;die Option;option;Es gibt mehrere Optionen zur Auswahl.; There are several options to choose from.
+B2;das Prinzip;principle;Das Prinzip der Gleichberechtigung ist in vielen Ländern verankert.; The principle of equality is enshrined in many countries.
+B2;die Quote;quota;Die Quote für erneuerbare Energien soll erhöht werden.; The quota for renewable energy is to be increased.
+B2;das Risiko;risk;Bei jeder Investition gibt es ein gewisses Risiko.; Every investment involves a certain risk.
+B2;die Strategie;strategy;Die Strategie des Unternehmens zielt auf internationales Wachstum ab.; The company's strategy aims at international growth.
+B2;das Team;team;Ein gut funktionierendes Team erreicht gemeinsam seine Ziele.; A well-functioning team achieves its goals together.
+B2;der Umsatz;revenue;Der Umsatz des Unternehmens ist im letzten Quartal gestiegen.; The company's revenue has increased in the last quarter.
+B2;das Volumen;volume;Das Volumen der Produktion wurde deutlich erhöht.; The volume of production has been significantly increased.
+B2;die Wirkung;effect;Die Wirkung der Medizin setzt schnell ein.; The effect of the medicine kicks in quickly.
+B2;die Xenophobie;xenophobia;Xenophobie ist die Angst vor Fremden oder Fremdartigem.; Xenophobia is the fear of strangers or the unfamiliar.
+B2;das Yoga;yoga;Yoga fördert die Entspannung und Beweglichkeit des Körpers.; Yoga promotes relaxation and flexibility of the body.
+B2;die Zensur;censorship;Zensur kann die freie Meinungsäußerung beeinträchtigen.; Censorship can impede freedom of expression.
+B2;das Abenteuer;adventure;Reisen bringt oft Abenteuer mit sich.; Traveling often involves adventures.
+B2;die Barriere;barrier;Die Barriere erschwert den Zugang für Menschen im Rollstuhl.; The barrier makes access difficult for people in wheelchairs.
+B2;die Delikatesse;delicacy;In vielen Ländern gelten Insekten als eine Delikatesse.; In many countries, insects are considered a delicacy.
+B2;die Energiequelle;energy source;Erneuerbare Energien sind eine wichtige Energiequelle.; Renewable energies are an important energy source.
+B2;die Fassade;facade;Die Fassade des Gebäudes wurde renoviert.; The facade of the building has been renovated.
+B2;die Ambition;ambition;Seine Ambitionen reichen über beruflichen Erfolg hinaus.; His ambitions extend beyond professional success.
+B2;die Anerkennung;recognition;Die Anerkennung ihrer Leistungen motivierte sie.; Recognition of her achievements motivated her.
+B2;das Argument;argument;Ein überzeugendes Argument kann die Meinung ändern.; A convincing argument can change an opinion.
+B2;die Authentizität;authenticity;Die Authentizität des Gemäldes wurde überprüft.; The authenticity of the painting was verified.
+B2;die Behandlung;treatment;Die Behandlung der Krankheit erfordert Geduld.; The treatment of the illness requires patience.
+B2;die Bewerbung;application;Die Bewerbung umfasst Anschreiben und Lebenslauf.; The application includes a cover letter and a resume.
+B2;das Chaos;chaos;Nach dem Umzug herrschte vorübergehend Chaos in der Wohnung.; After the move, there was temporary chaos in the apartment.
+B2;die Debatte;debate;Die Debatte über Umweltschutz ist wichtig für die Gesellschaft.; The debate on environmental protection is important for society.
+B2;die Dimension;dimension;Die räumlichen Dimensionen des Raums sind beeindruckend.; The spatial dimensions of the room are impressive.
+B2;die Emanzipation;emancipation;Die Emanzipation der Frauen hat zu Fortschritten geführt.; The emancipation of women has led to progress.
+B2;das Experiment;experiment;Das Experiment lieferte überraschende Ergebnisse.; The experiment yielded surprising results.
+B2;die Faszination;fascination;Die Faszination für das Unbekannte treibt die Forschung an.; The fascination with the unknown drives research.
+B2;die Gerechtigkeit;justice;Gerechtigkeit ist ein Grundprinzip einer demokratischen Gesellschaft.; Justice is a fundamental principle of a democratic society.
+B2;das Hindernis;obstacle;Das Hindernis im Weg musste überwunden werden.; The obstacle in the way had to be overcome.
+B2;die Illusion;illusion;Manchmal erzeugt die Illusion von Sicherheit Risiken.; Sometimes the illusion of security creates risks.
+B2;das Klima;climate;Der Klimawandel beeinflusst das weltweite Klima.; Climate change influences the global climate.
+B2;die Kontroverse;controversy;Die Kontroverse um das Thema hat zu hitzigen Diskussionen geführt.; The controversy surrounding the topic has led to heated discussions.
+B2;die Legende;legend;Die Legende erzählt von heldenhaften Taten.; The legend tells of heroic deeds.
+B2;die Manipulation;manipulation;Die Manipulation von Daten ist illegal.; Manipulation of data is illegal.
+B2;das Netzwerk;network;Das berufliche Netzwerk bietet viele Karrieremöglichkeiten.; The professional network offers many career opportunities.
+B2;das Organ;organ;Das Herz ist ein lebenswichtiges Organ.; The heart is a vital organ.
+B2;die Perspektive;perspective;Eine positive Perspektive kann die Lebensqualität verbessern.; A positive perspective can improve the quality of life.
+B2;der Qualitätsstandard;quality standard;Der Qualitätsstandard wird in der Produktion streng eingehalten.; The quality standard is strictly adhered to in production.
+B2;der Rhythmus;rhythm;Der Rhythmus der Musik beeinflusst die Stimmung.; The rhythm of the music influences the mood.
+B2;die Sensation;sensation;Die Entdeckung des neuen Planeten war eine wissenschaftliche Sensation.; The discovery of the new planet was a scientific sensation.
+B2;die Toleranz;tolerance;Toleranz gegenüber unterschiedlichen Meinungen ist wichtig.; Tolerance towards different opinions is important.
+B2;die Unterstützung;support;Die Unterstützung der Kollegen ist in schwierigen Zeiten besonders wichtig.; The support of colleagues is especially important in difficult times.
+B2;das Verhalten;behavior;Das Verhalten im Team beeinflusst den Arbeitsalltag.; Behavior in the team influences the daily work routine.
+B2;die Wirklichkeit;reality;Die Wirklichkeit kann von den Erwartungen abweichen.; Reality can deviate from expectations.
+B2;der Zufall;coincidence;Die Begegnung war kein Zufall, sondern Schicksal.; The encounter was not a coincidence but destiny.
+B2;die Ansicht;view;Die Ansicht des Bildes hängt vom Standpunkt ab.; The view of the picture depends on the perspective.
+B2;die Begründung;justification;Die Begründung für die Entscheidung wurde ausführlich erläutert.; The justification for the decision was explained in detail.
+B2;die Dimension;dimension;Die zeitliche Dimension des Projekts wurde unterschätzt.; The temporal dimension of the project was underestimated.
+B2;die Eingliederung;integration;Die Eingliederung neuer Mitarbeiter erfordert eine strukturierte Vorgehensweise.; The integration of new employees requires a structured approach.
+B2;die Führungskraft;executive;Die Führungskraft ist für die strategische Ausrichtung des Unternehmens verantwortlich.; The executive is responsible for the strategic direction of the company.
+B2;die Globalisierung;globalization;Die Globalisierung hat Auswirkungen auf Wirtschaft und Kultur.; Globalization has effects on economy and culture.
+B2;der Handlungsspielraum;scope for action;Der Handlungsspielraum der Regierung ist durch politische Beschlüsse begrenzt.; The government's scope for action is limited by political decisions.
+B2;die Identität;identity;Die Identität einer Person besteht aus verschiedenen Merkmalen.; The identity of a person consists of various characteristics.
+B2;die Kooperation;cooperation;Die Kooperation zwischen Unternehmen fördert den gemeinsamen Erfolg.; Cooperation between companies promotes mutual success.
+B2;der Lebensraum;habitat;Der Lebensraum von bedrohten Arten muss geschützt werden.; The habitat of endangered species must be protected.
+B2;die Meisterleistung;masterpiece;Das Gemälde des Künstlers gilt als seine Meisterleistung.; The painting by the artist is considered his masterpiece.
+B2;die Notwendigkeit;necessity;Die Notwendigkeit von Veränderungen wurde erkannt.; The necessity of changes has been recognized.
+B2;die Organisation;organization;Die Organisation des Events erfordert eine gute Planung.; The organization of the event requires careful planning.
+B2;das Phänomen;phenomenon;Das Phänomen tritt unter bestimmten Bedingungen auf.; The phenomenon occurs under specific conditions.
+B2;der Quantensprung;quantum leap;Der technologische Fortschritt ermöglichte einen Quantensprung.; Technological progress allowed for a quantum leap.
+B2;die Ressource;resource;Nachhaltige Nutzung von Ressourcen ist wichtig für die Umwelt.; Sustainable use of resources is important for the environment.
+B2;die Anpassung;adaptation;Die Anpassung an neue Technologien ist entscheidend.; Adaptation to new technologies is crucial.
+B2;die Bilanzierung;accounting;Die Bilanzierung der Finanzen erfordert Genauigkeit.; Accounting of finances requires accuracy.
+B2;die Charakterisierung;characterization;Die Charakterisierung der Hauptfigur war sehr detailliert.; The characterization of the main character was very detailed.
+B2;das Delikt;offense;Das Delikt führte zu rechtlichen Konsequenzen.; The offense led to legal consequences.
+B2;der Empfänger;recipient;Der Empfänger des Preises war überrascht und dankbar.; The recipient of the award was surprised and grateful.
+B2;die Fassung;version;Die neue Fassung der Software enthält viele Verbesserungen.; The new version of the software includes many improvements.
+B2;die Genauigkeit;accuracy;Die Genauigkeit der Messungen ist entscheidend für die Forschung.; The accuracy of measurements is crucial for research.
+B2;die Harmonie;harmony;Die Harmonie zwischen den Teammitgliedern fördert die Zusammenarbeit.; Harmony among team members promotes collaboration.
+B2;die Inkarnation;incarnation;Die Inkarnation des Künstlers spiegelt sich in seinen Werken wider.; The incarnation of the artist is reflected in his works.
+B2;das Jubiläum;anniversary;Das Jubiläum des Unternehmens wird mit einer Feier gefeiert.; The company's anniversary is celebrated with a party.
+B2;der Konflikt;conflict;Der Konflikt zwischen den Ländern wurde diplomatisch gelöst.; The conflict between the countries was diplomatically resolved.
+B2;die Leidenschaft;passion;Die Leidenschaft für die Musik begleitet sie seit ihrer Kindheit.; Passion for music has accompanied her since childhood.
+B2;das Missverständnis;misunderstanding;Das Missverständnis wurde durch klare Kommunikation gelöst.; The misunderstanding was resolved through clear communication.
+B2;die Niederlage;defeat;Die Niederlage im Wettkampf war enttäuschend, aber lehrreich.; The defeat in the competition was disappointing but instructive.
+B2;das Opfer;victim;Das Opfer des Verbrechens erhält Unterstützung von der Polizei.; The victim of the crime receives support from the police.
+B2;der Prozess;process;Der Prozess der Produktion wurde optimiert, um Zeit zu sparen.; The process of production has been optimized to save time.
+B2;der Quantensprung;quantum leap;Der technologische Fortschritt ermöglichte einen Quantensprung in der Medizin.; Technological progress enabled a quantum leap in medicine.
+B2;das Rätsel;riddle;Das Rätsel wurde von vielen Menschen versucht zu lösen.; The riddle was attempted to be solved by many people.
+B2;die Skulptur;sculpture;Die Skulptur im Park wurde von einem berühmten Künstler geschaffen.; The sculpture in the park was created by a famous artist.
+B2;das Tabu;taboo;Über gewisse Themen herrscht in der Gesellschaft ein Tabu.; There is a taboo on certain topics in society.
+B2;der Umbruch;transformation;Der Umbruch in der Wirtschaft erfordert Anpassungsfähigkeit.; The transformation in the economy requires adaptability.
+B2;die Verbindung;connection;Die Verbindung zwischen den Geräten wurde erfolgreich hergestellt.; The connection between the devices was successfully established.
+B2;die Wechselwirkung;interaction;Die Wechselwirkung zwischen den Substanzen wurde intensiv erforscht.; The interaction between the substances has been intensively researched.
+B2;die Abstraktion;abstraction;Die Abstraktion in der Kunst ermöglicht verschiedene Interpretationen.; Abstraction in art allows for various interpretations.
+B2;das Bedürfnis;need;Das Bedürfnis nach Sicherheit ist grundlegend für das Wohlbefinden.; The need for security is fundamental for well-being.
+B2;der Cluster;cluster;Der Cluster von Unternehmen fördert die Innovation in der Region.; The cluster of companies promotes innovation in the region.
+B2;die Dekade;decade;Die letzte Dekade war geprägt von technologischem Fortschritt.; The last decade was characterized by technological progress.
+B2;das Element;element;Das Element Wasser ist lebenswichtig für alle Organismen.; The element water is vital for all organisms.
+B2;die Fokussierung;focus;Die Fokussierung auf die Kernkompetenzen verbesserte die Unternehmensleistung.; The focus on core competencies improved company performance.
+B2;die Geste;gesture;Die Geste des Händeschüttelns ist ein Zeichen der Höflichkeit.; The gesture of shaking hands is a sign of politeness.
+B2;das Heilmittel;remedy;Das Heilmittel gegen die Krankheit wurde endlich gefunden.; The remedy for the illness was finally discovered.
+B2;die Isolation;isolation;Die Isolation während der Quarantäne war herausfordernd.; Isolation during quarantine was challenging.
+B2;die Kollaboration;collaboration;Die Kollaboration zwischen Wissenschaftlern führte zu neuen Erkenntnissen.; Collaboration among scientists led to new insights.
+B2;die Legitimation;legitimation;Die Legitimation des Projekts wurde durch erfolgreiche Ergebnisse erreicht.; The legitimation of the project was achieved through successful results.
+B2;die Metropole;metropolis;Die Metropole bietet viele kulturelle Veranstaltungen und Sehenswürdigkeiten.; The metropolis offers many cultural events and attractions.
+B2;das Niveau;level;Das Niveau der Diskussion war anspruchsvoll und informativ.; The level of the discussion was sophisticated and informative.
+B2;die Orientierung;orientation;Die Orientierung im neuen Gebäude erforderte eine Karte.; Orientation in the new building required a map.
+B2;die Perspektive;perspective;Die Perspektive der Studie wurde durch verschiedene Methoden beleuchtet.; The perspective of the study was illuminated through various methods.
+B2;der Quadrant;quadrant;Die Karte ist in vier Quadranten unterteilt, um die Orientierung zu erleichtern.; The map is divided into four quadrants to facilitate orientation.
+B2;die Reparatur;repair;Die Reparatur des defekten Geräts wurde vom Techniker durchgeführt.; The repair of the faulty device was carried out by the technician.
+B2;die Segmentierung;segmentation;Die Segmentierung des Marktes ermöglicht gezielte Marketingstrategien.; Market segmentation allows for targeted marketing strategies.
+B2;das Tabu;taboo;In manchen Kulturen ist der Verzehr bestimmter Lebensmittel ein Tabu.; In some cultures, the consumption of certain foods is taboo.
+B2;der Umschwung;turnaround;Der Umschwung in der Wirtschaft brachte positive Veränderungen mit sich.; The economic turnaround brought about positive changes.
+B2;das Verhalten;behavior;Das Verhalten in sozialen Situationen kann von Kultur zu Kultur unterschiedlich sein.; Behavior in social situations can vary from culture to culture.
+B2;die Zensur;censorship;Die Zensur von Informationen kann die Meinungsfreiheit einschränken.; Censorship of information can restrict freedom of expression.
+B2;die Akzeptanz;acceptance;Die Akzeptanz neuer Ideen kann den Fortschritt fördern.; Acceptance of new ideas can promote progress.
+B2;die Beziehung;relationship;Eine gesunde Beziehung basiert auf Vertrauen und Kommunikation.; A healthy relationship is based on trust and communication.
+B2;die Diversität;diversity;Diversität in der Belegschaft bringt unterschiedliche Perspektiven ein.; Diversity in the workforce brings in different perspectives.
+B2;die Effektivität;effectiveness;Die Effektivität der Maßnahme wird durch regelmäßige Überprüfung sichergestellt.; The effectiveness of the measure is ensured through regular evaluation.
+B2;das Fortschreiten;progression;Das Fortschreiten der Krankheit erfordert eine angepasste Behandlung.; The progression of the illness requires an adapted treatment.
+B2;die Gleichberechtigung;equal rights;Gleichberechtigung ist ein grundlegendes Prinzip in einer demokratischen Gesellschaft.; Equal rights are a fundamental principle in a democratic society.
+B2;die Harmonie;harmony;Die Harmonie in der Musik erzeugt angenehme Klänge.; Harmony in music creates pleasant sounds.
+B2;der Inkrement;increment;Die Verbesserungen erfolgen schrittweise durch kleine Inkremente.; Improvements are made step by step through small increments.
+B2;die Kompensation;compensation;Die Kompensation von CO2-Emissionen ist ein Beitrag zum Umweltschutz.; Compensating for CO2 emissions is a contribution to environmental protection.
+B2;das Leitbild;guiding principle;Das Leitbild des Unternehmens betont Nachhaltigkeit und Innovation.; The company's guiding principle emphasizes sustainability and innovation.
+B2;die Mobilität;mobility;Moderne Technologien fördern die Mobilität in der Gesellschaft.; Modern technologies promote mobility in society.
+B2;die Norm;norm;Die Einhaltung von Normen ist wichtig für die Qualitätssicherung.; Compliance with norms is important for quality assurance.
+B2;der Optimismus;optimism;Optimismus kann eine positive Einstellung fördern.; Optimism can promote a positive attitude.
+B2;der Prozess;process;Der Prozess der Produktentwicklung erfordert Koordination aller Teams.; The process of product development requires coordination of all teams.
+B2;die Quantität;quantity;Die Quantität der produzierten Waren beeinflusst den Markterfolg.; The quantity of produced goods influences market success.
+B2;die Raffinesse;sophistication;Die Raffinesse des Designs beeindruckte die Kunstkritiker.; The sophistication of the design impressed the art critics.
+B2;das Spannungsfeld;field of tension;Das Spannungsfeld zwischen Tradition und Innovation ist herausfordernd.; The field of tension between tradition and innovation is challenging.
+B2;die Tendenz;tendency;Die Tendenz der Preise zeigt einen leichten Anstieg.; The tendency of prices shows a slight increase.
+B2;die Unabhängigkeit;independence;Die Unabhängigkeit des Landes wurde durch einen langen Freiheitskampf erkämpft.; The independence of the country was achieved through a long struggle for freedom.
+B2;die Vielfalt;variety;Die Vielfalt der Speisekarte bietet für jeden Geschmack etwas.; The variety of the menu offers something for every taste.
+B2;die Wechselwirkung;interaction;Die Wechselwirkung zwischen verschiedenen Faktoren beeinflusst das Ergebnis.; The interaction between different factors influences the result.
+B2;das Xylophon;xylophone;Das Xylophon ist ein beliebtes Musikinstrument.; The xylophone is a popular musical instrument.
+B2;das Yoga;yoga;Yoga fördert die Entspannung und Flexibilität des Körpers.; Yoga promotes relaxation and flexibility of the body.
+B2;das Zentrum;center;Das Zentrum der Stadt ist ein lebendiger Ort mit vielen Geschäften und Restaurants.; The center of the city is a vibrant place with many shops and restaurants.
+B2;die Ambivalenz;ambivalence;Die Ambivalenz der Situation macht eine klare Entscheidung schwer.; The ambivalence of the situation makes a clear decision difficult.
+B2;die Anomalie;anomaly;Die Anomalie im Verhalten des Computers wurde behoben.; The anomaly in the computer's behavior has been fixed.
+B2;der Bonus;bonus;Der Bonus für gute Leistungen motiviert die Mitarbeiter.; The bonus for good performance motivates the employees.
+B2;die Chancengleichheit;equal opportunities;Chancengleichheit am Arbeitsplatz ist ein wichtiges Ziel.; Equal opportunities in the workplace are an important goal.
+B2;die Diversifikation;diversification;Die Diversifikation des Portfolios reduziert das Risiko von Verlusten.; Diversification of the portfolio reduces the risk of losses.
+B2;die Eleganz;elegance;Die Eleganz des Designs verleiht dem Raum eine ansprechende Atmosphäre.; The elegance of the design gives the room an appealing atmosphere.
+B2;die Faszination;fascination;Die Faszination für das Unbekannte treibt Forscher zu neuen Entdeckungen an.; The fascination with the unknown drives researchers to new discoveries.
+B2;das Genie;genius;Das Genie des Künstlers zeigt sich in seinen einzigartigen Werken.; The genius of the artist is evident in his unique works.
+B2;das Handicap;handicap;Ein Handicap kann durch Anpassungen überwunden werden.; A handicap can be overcome through adjustments.
+C1;die Abstraktion;abstraction;Die Abstraktion von Informationen erleichtert das Verständnis komplexer Zusammenhänge.; The abstraction of information facilitates the understanding of complex relationships.
+C1;die Anomalie;anomaly;Die Anomalie in den Forschungsergebnissen erfordert weitere Untersuchungen.; The anomaly in the research results requires further investigation.
+C1;die Authentizität;authenticity;Die Authentizität des historischen Dokuments wurde durch forensische Methoden überprüft.; The authenticity of the historical document was verified through forensic methods.
+C1;die Bürokratie;bureaucracy;Die Bürokratie kann den Fortschritt in vielen Organisationen behindern.; Bureaucracy can hinder progress in many organizations.
+C1;die Diskrepanz;discrepancy;Die Diskrepanz zwischen den offiziellen Zahlen und den tatsächlichen Ergebnissen ist besorgniserregend.; The discrepancy between official figures and actual results is worrisome.
+C1;die Emanzipation;emancipation;Die Emanzipation der Bevölkerung ist ein langfristiges gesellschaftliches Ziel.; The emancipation of the population is a long-term societal goal.
+C1;die Empathie;empathy;Empathie ist eine wichtige Eigenschaft für erfolgreiche zwischenmenschliche Beziehungen.; Empathy is an important trait for successful interpersonal relationships.
+C1;die Finesse;finesse;Die Finesse in der Kochkunst zeigt sich in den raffinierten Geschmackskombinationen.; The finesse in culinary art is evident in the sophisticated flavor combinations.
+C1;die Globalisierung;globalization;Die Globalisierung hat dazu beigetragen, dass sich Wirtschaft und Kultur weltweit stärker miteinander verflechten.; Globalization has contributed to stronger interconnection of economies and cultures worldwide.
+C1;die Hybris;hubris;Hybris kann zu Selbstüberschätzung und Fehlentscheidungen führen.; Hubris can lead to overestimation of oneself and misjudgments.
+C1;die Implementierung;implementation;Die Implementierung neuer Technologien erfordert eine umfassende Schulung der Mitarbeiter.; The implementation of new technologies requires comprehensive training of employees.
+C1;das Kaleidoskop;kaleidoscope;Ein Kaleidoskop von Farben und Formen fasziniert die Betrachter.; A kaleidoscope of colors and shapes fascinates the observers.
+C1;die Konnotation;connotation;Die Konnotation eines Wortes kann die emotionale Wirkung eines Textes beeinflussen.; The connotation of a word can influence the emotional impact of a text.
+C1;die Legitimität;legitimacy;Die Legitimität politischer Entscheidungen wird oft durch demokratische Prozesse bestimmt.; The legitimacy of political decisions is often determined through democratic processes.
+C1;die Modifikation;modification;Die Modifikation des genetischen Codes kann zu veränderten Eigenschaften in Organismen führen.; The modification of the genetic code can lead to altered traits in organisms.
+C1;die Neutralität;neutrality;Die Neutralität des Mediators ist entscheidend für eine faire Konfliktlösung.; The neutrality of the mediator is crucial for a fair conflict resolution.
+C1;die Optimierung;optimization;Die Optimierung von Produktionsprozessen führt oft zu effizienteren Abläufen.; The optimization of production processes often leads to more efficient workflows.
+C1;die Paradoxie;paradox;Die Paradoxie dieser Situation lässt sich nur schwer auflösen.; The paradox of this situation is difficult to resolve.
+C1;die Quantenphysik;quantum physics;Die Quantenphysik beschäftigt sich mit den fundamentalen Eigenschaften von Teilchen auf subatomarer Ebene.; Quantum physics deals with the fundamental properties of particles on a subatomic level.
+C1;die Relevanz;relevance;Die Relevanz von Forschungsergebnissen hängt oft von ihrem Beitrag zum aktuellen Wissensstand ab.; The relevance of research results often depends on their contribution to the current state of knowledge.
+C1;die Symbiose;symbiosis;Die Symbiose zwischen Pflanzen und bestimmten Bakterien ist für beide Partner vorteilhaft.; The symbiosis between plants and certain bacteria is beneficial for both partners.
+C1;die Transformation;transformation;Die Transformation von traditionellen Geschäftsmodellen ist entscheidend in einer digitalen Welt.; The transformation of traditional business models is crucial in a digital world.
+C1;die Umkehrung;reversal;Die Umkehrung von Entscheidungen kann notwendig sein, wenn sich die Situation ändert.; The reversal of decisions may be necessary when the situation changes.
+C1;die Verifizierung;verification;Die Verifizierung der Ergebnisse ist ein wichtiger Schritt in wissenschaftlichen Studien.; Verification of results is an important step in scientific studies.
+C1;die Widerlegung;refutation;Die Widerlegung von Hypothesen ist ein normaler Teil des wissenschaftlichen Prozesses.; The refutation of hypotheses is a normal part of the scientific process.
+C1;die Xenophobie;xenophobia;Xenophobie, die Angst vor Fremden, kann zu Vorurteilen und Diskriminierung führen.; Xenophobia, the fear of strangers, can lead to prejudice and discrimination.
+C1;die Yacht;yacht;Die Yacht glitt elegant über die Wellen des Ozeans.; The yacht glided gracefully over the waves of the ocean.
+C1;das Zitat;quotation;Ein gut gewähltes Zitat kann eine Argumentation oder einen Text bereichern.; A well-chosen quotation can enrich an argument or a text.
+C1;das Antonym;antonym;Ein Antonym ist ein Wort, das die gegenteilige Bedeutung eines anderen Wortes hat.; An antonym is a word that has the opposite meaning of another word.
+C1;das Dilemma;dilemma;Das Dilemma zwischen zwei wichtigen Prinzipien führte zu einer schweren Entscheidung.; The dilemma between two important principles led to a difficult decision.
+C1;das Epizentrum;epicenter;Das Epizentrum des Erdbebens lag in einer abgelegenen Region.; The epicenter of the earthquake was in a remote region.
+C1;das Fazit;conclusion;Das Fazit der Studie fasst die wichtigsten Ergebnisse zusammen.; The conclusion of the study summarizes the main results.
+C1;das Genom;genome;Das Genom eines Organismus enthält die gesamte genetische Information.; The genome of an organism contains all the genetic information.
+C1;das Habitat;habitat;Der Schutz des natürlichen Habitats ist entscheidend für den Erhalt bedrohter Arten.; The protection of the natural habitat is crucial for the conservation of endangered species.
+C1;das Inserat;advertisement;Das Inserat im Magazin präsentierte das neue Produkt mit ansprechendem Design.; The advertisement in the magazine presented the new product with an appealing design.
+C1;das Konzil;council;Das Konzil versammelte Vertreter aus verschiedenen Regionen zur Diskussion wichtiger Themen.; The council brought together representatives from different regions to discuss important issues.
+C1;das Labyrinth;labyrinth;Das Labyrinth war so verworren, dass es schwer war, den Ausgang zu finden.; The labyrinth was so intricate that it was difficult to find the exit.
+C1;das Momentum;momentum;Das Momentum eines Projekts kann durch erfolgreiche Meilensteine gesteigert werden.; The momentum of a project can be enhanced by successful milestones.
+C1;das Narrativ;narrative;Das Narrativ des Buches entfaltet sich durch komplexe Handlungsstränge.; The narrative of the book unfolds through complex plotlines.
+C1;das Omen;omen;Das unerwartete Ereignis wurde als ein Omen für Veränderungen interpretiert.; The unexpected event was interpreted as an omen for change.
+C1;das Plenum;plenum;Das Plenum diskutierte intensiv über die zukünftige Ausrichtung der Organisation.; The plenum had intense discussions about the future direction of the organization.
+C1;die Abstraktion;abstraction;Die Abstraktion von Informationen erleichtert das Verständnis komplexer Zusammenhänge.; The abstraction of information facilitates the understanding of complex relationships.
+C1;die Anomalie;anomaly;Die Anomalie in den Forschungsergebnissen erfordert weitere Untersuchungen.; The anomaly in the research results requires further investigation.
+C1;die Authentizität;authenticity;Die Authentizität des historischen Dokuments wurde durch forensische Methoden überprüft.; The authenticity of the historical document was verified through forensic methods.
+C1;die Bürokratie;bureaucracy;Die Bürokratie kann den Fortschritt in vielen Organisationen behindern.; Bureaucracy can hinder progress in many organizations.
+C1;die Diskrepanz;discrepancy;Die Diskrepanz zwischen den offiziellen Zahlen und den tatsächlichen Ergebnissen ist besorgniserregend.; The discrepancy between official figures and actual results is worrisome.
+C1;die Emanzipation;emancipation;Die Emanzipation der Bevölkerung ist ein langfristiges gesellschaftliches Ziel.; The emancipation of the population is a long-term societal goal.
+C1;die Empathie;empathy;Empathie ist eine wichtige Eigenschaft für erfolgreiche zwischenmenschliche Beziehungen.; Empathy is an important trait for successful interpersonal relationships.
+C1;die Finesse;finesse;Die Finesse in der Kochkunst zeigt sich in den raffinierten Geschmackskombinationen.; The finesse in culinary art is evident in the sophisticated flavor combinations.
+C1;die Globalisierung;globalization;Die Globalisierung hat dazu beigetragen, dass sich Wirtschaft und Kultur weltweit stärker miteinander verflechten.; Globalization has contributed to stronger interconnection of economies and cultures worldwide.
+C1;die Hybris;hubris;Hybris kann zu Selbstüberschätzung und Fehlentscheidungen führen.; Hubris can lead to overestimation of oneself and misjudgments.
+C1;die Implementierung;implementation;Die Implementierung neuer Technologien erfordert eine umfassende Schulung der Mitarbeiter.; The implementation of new technologies requires comprehensive training of employees.
+C1;das Kaleidoskop;kaleidoscope;Ein Kaleidoskop von Farben und Formen fasziniert die Betrachter.; A kaleidoscope of colors and shapes fascinates the observers.
+C1;die Konnotation;connotation;Die Konnotation eines Wortes kann die emotionale Wirkung eines Textes beeinflussen.; The connotation of a word can influence the emotional impact of a text.
+C1;die Legitimität;legitimacy;Die Legitimität politischer Entscheidungen wird oft durch demokratische Prozesse bestimmt.; The legitimacy of political decisions is often determined through democratic processes.
+C1;die Modifikation;modification;Die Modifikation des genetischen Codes kann zu veränderten Eigenschaften in Organismen führen.; The modification of the genetic code can lead to altered traits in organisms.
+C1;die Neutralität;neutrality;Die Neutralität des Mediators ist entscheidend für eine faire Konfliktlösung.; The neutrality of the mediator is crucial for a fair conflict resolution.
+C1;die Optimierung;optimization;Die Optimierung von Produktionsprozessen führt oft zu effizienteren Abläufen.; The optimization of production processes often leads to more efficient workflows.
+C1;die Paradoxie;paradox;Die Paradoxie dieser Situation lässt sich nur schwer auflösen.; The paradox of this situation is difficult to resolve.
+C1;die Quantenphysik;quantum physics;Die Quantenphysik beschäftigt sich mit den fundamentalen Eigenschaften von Teilchen auf subatomarer Ebene.; Quantum physics deals with the fundamental properties of particles on a subatomic level.
+C1;die Relevanz;relevance;Die Relevanz von Forschungsergebnissen hängt oft von ihrem Beitrag zum aktuellen Wissensstand ab.; The relevance of research results often depends on their contribution to the current state of knowledge.
+C1;die Symbiose;symbiosis;Die Symbiose zwischen Pflanzen und bestimmten Bakterien ist für beide Partner vorteilhaft.; The symbiosis between plants and certain bacteria is beneficial for both partners.
+C1;die Transformation;transformation;Die Transformation von traditionellen Geschäftsmodellen ist entscheidend in einer digitalen Welt.; The transformation of traditional business models is crucial in a digital world.
+C1;die Umkehrung;reversal;Die Umkehrung von Entscheidungen kann notwendig sein, wenn sich die Situation ändert.; The reversal of decisions may be necessary when the situation changes.
+C1;die Verifizierung;verification;Die Verifizierung der Ergebnisse ist ein wichtiger Schritt in wissenschaftlichen Studien.; Verification of results is an important step in scientific studies.
+C1;die Widerlegung;refutation;Die Widerlegung von Hypothesen ist ein normaler Teil des wissenschaftlichen Prozesses.; The refutation of hypotheses is a normal part of the scientific process.
+C1;die Xenophobie;xenophobia;Xenophobie, die Angst vor Fremden, kann zu Vorurteilen und Diskriminierung führen.; Xenophobia, the fear of strangers, can lead to prejudice and discrimination.
+C1;die Yacht;yacht;Die Yacht glitt elegant über die Wellen des Ozeans.; The yacht glided gracefully over the waves of the ocean.
+C1;das Zitat;quotation;Ein gut gewähltes Zitat kann eine Argumentation oder einen Text bereichern.; A well-chosen quotation can enrich an argument or a text.
+C1;das Antonym;antonym;Ein Antonym ist ein Wort, das die gegenteilige Bedeutung eines anderen Wortes hat.; An antonym is a word that has the opposite meaning of another word.
+C1;das Dilemma;dilemma;Das Dilemma zwischen zwei wichtigen Prinzipien führte zu einer schweren Entscheidung.; The dilemma between two important principles led to a difficult decision.
+C1;das Epizentrum;epicenter;Das Epizentrum des Erdbebens lag in einer abgelegenen Region.; The epicenter of the earthquake was in a remote region.
+C1;das Fazit;conclusion;Das Fazit der Studie fasst die wichtigsten Ergebnisse zusammen.; The conclusion of the study summarizes the main results.
+C1;das Genom;genome;Das Genom eines Organismus enthält die gesamte genetische Information.; The genome of an organism contains all the genetic information.
+C1;das Habitat;habitat;Der Schutz des natürlichen Habitats ist entscheidend für den Erhalt bedrohter Arten.; The protection of the natural habitat is crucial for the conservation of endangered species.
+C1;das Inserat;advertisement;Das Inserat im Magazin präsentierte das neue Produkt mit ansprechendem Design.; The advertisement in the magazine presented the new product with an appealing design.
+C1;das Konzil;council;Das Konzil versammelte Vertreter aus verschiedenen Regionen zur Diskussion wichtiger Themen.; The council brought together representatives from different regions to discuss important issues.
+C1;das Labyrinth;labyrinth;Das Labyrinth war so verworren, dass es schwer war, den Ausgang zu finden.; The labyrinth was so intricate that it was difficult to find the exit.
+C1;das Momentum;momentum;Das Momentum eines Projekts kann durch erfolgreiche Meilensteine gesteigert werden.; The momentum of a project can be enhanced by successful milestones.
+C1;das Narrativ;narrative;Das Narrativ des Buches entfaltet sich durch komplexe Handlungsstränge.; The narrative of the book unfolds through complex plotlines.
+C1;das Omen;omen;Das unerwartete Ereignis wurde als ein Omen für Veränderungen interpretiert.; The unexpected event was interpreted as an omen for change.
+C1;das Plenum;plenum;Das Plenum diskutierte intensiv über die zukünftige Ausrichtung der Organisation.; The plenum had intense discussions about the future direction of the organization.
+C1;das Quorum;quorum;Für gültige Entscheidungen benötigte die Versammlung ein bestimmtes Quorum.; For valid decisions, the assembly needed a certain quorum.
+C1;das Reservoir;reservoir;Das Reservoir speichert große Mengen Wasser für die Wasserversorgung der Stadt.; The reservoir stores large amounts of water for the city's water supply.
+C1;das Symposium;symposium;Das Symposium brachte Experten aus verschiedenen Disziplinen zusammen, um aktuelle Fragen zu diskutieren.; The symposium brought together experts from various disciplines to discuss current issues.
+C1;das Tableau;tableau;Das Tableau der Gemälde im Museum zeigte die Vielfalt der künstlerischen Stile.; The tableau of paintings in the museum displayed the diversity of artistic styles.
+C1;das Ultimatum;ultimatum;Das Ultimatum setzte eine klare Frist für die Erfüllung der Forderungen.; The ultimatum set a clear deadline for the fulfillment of demands.
+C1;das Votum;votum;Das Votum der Mitglieder beeinflusste die Entscheidung des Vereinsvorstands.; The votum of the members influenced the decision of the association's board.
+C1;das Wagnis;venture;Das Wagnis, in neue Märkte zu expandieren, erfordert eine sorgfältige Planung.; The venture of expanding into new markets requires careful planning.
+C1;das Xenon;xenon;Das Xenon wird in bestimmten Lampen zur Erzeugung von hellem Licht verwendet.; Xenon is used in specific lamps to generate bright light.
+C1;das Yin und Yang;yin and yang;Das Prinzip von Yin und Yang beschreibt die Dualität und gegenseitige Abhängigkeit von Gegensätzen.; The principle of yin and yang describes the duality and mutual dependence of opposites.
+C1;das Zeugnis;testimony;Das Zeugnis des Augenzeugen spielte eine wichtige Rolle bei der Gerichtsverhandlung.; The testimony of the eyewitness played a crucial role in the court hearing.
+C1;das Abonnement;subscription;Das Abonnement ermöglicht den regelmäßigen Bezug der Zeitschrift.; The subscription allows for the regular receipt of the magazine.
+C1;das Diorama;diorama;Das Diorama im Museum veranschaulichte das Leben in vergangenen Epochen.; The diorama in the museum illustrated life in past epochs.
+C1;das Echo;echo;Das Echo der Musik hallte durch die imposante Halle.; The echo of the music reverberated through the impressive hall.
+C1;das Feng Shui;feng shui;Feng Shui betrachtet die harmonische Gestaltung von Räumen zur Förderung des Wohlbefindens.; Feng Shui considers the harmonious design of spaces to promote well-being.
+C1;das Habitat;habitat;Der Schutz des natürlichen Habitats ist entscheidend für den Erhalt bedrohter Arten.; The protection of the natural habitat is crucial for the conservation of endangered species.
+C1;das Inserat;advertisement;Das Inserat im Magazin präsentierte das neue Produkt mit ansprechendem Design.; The advertisement in the magazine presented the new product with an appealing design.
+C1;das Konzil;council;Das Konzil versammelte Vertreter aus verschiedenen Regionen zur Diskussion wichtiger Themen.; The council brought together representatives from different regions to discuss important issues.
+C1;das Labyrinth;labyrinth;Das Labyrinth war so verworren, dass es schwer war, den Ausgang zu finden.; The labyrinth was so intricate that it was difficult to find the exit.
+C1;das Momentum;momentum;Das Momentum eines Projekts kann durch erfolgreiche Meilensteine gesteigert werden.; The momentum of a project can be enhanced by successful milestones.
+C1;beharrlich;persistent;Er war beharrlich in seinem Streben nach Erfolg.;He was persistent in his pursuit of success.
+C1;unverwechselbar;distinctive;Ihr unverwechselbarer Stil macht sie leicht erkennbar.;Her distinctive style makes her easily recognizable.
+C1;faszinierend;fascinating;Die Geschichte war so faszinierend, dass ich das Buch nicht aus der Hand legen konnte.;The story was so fascinating that I couldn't put the book down.
+C1;ausgefeilt;sophisticated;Das Design des Produkts ist sehr ausgefeilt und ansprechend.;The design of the product is very sophisticated and appealing.
+C1;eigenständig;independent;Sie arbeitet eigenständig und benötigt wenig Anleitung.;She works independently and requires little guidance.
+C1;aufgeschlossen;open-minded;Sei aufgeschlossen gegenüber neuen Ideen und Perspektiven.;Be open-minded towards new ideas and perspectives.
+C1;zielstrebig;determined;Mit zielstrebiger Entschlossenheit erreichte er seine Ziele.;With determined resolve, he achieved his goals.
+C1;umfassend;comprehensive;Das Buch bietet eine umfassende Analyse des historischen Ereignisses.;The book provides a comprehensive analysis of the historical event.
+C1;vielfältig;diverse;Die Stadt ist für ihre vielfältige Kultur und Kunstszene bekannt.;The city is known for its diverse culture and art scene.
+C1;erstaunlich;astonishing;Die Leistung des Athleten bei den Olympischen Spielen war erstaunlich.;The athlete's performance at the Olympic Games was astonishing.
+C1;anspruchsvoll;demanding;Die Arbeit erfordert anspruchsvolle Fähigkeiten und Fachkenntnisse.;The job requires demanding skills and expertise.
+C1;raffiniert;refined;Das raffinierte Aroma des Gerichts machte es zu einem kulinarischen Erlebnis.;The refined flavor of the dish made it a culinary delight.
+C1;tiefgründig;profound;Der Philosoph hielt eine tiefgründige Rede über die Natur des Bewusstseins.;The philosopher delivered a profound speech on the nature of consciousness.
+C1;leidenschaftlich;passionate;Sie ist leidenschaftlich in ihrer Arbeit für soziale Gerechtigkeit.;She is passionate about her work for social justice.
+C1;überzeugend;convincing;Seine Argumente waren überzeugend und gut durchdacht.;His arguments were convincing and well thought out.
+C1;innovativ;innovative;Das Unternehmen investiert in innovative Technologien für die Zukunft.;The company is investing in innovative technologies for the future.
+C1;zukunftsweisend;forward-looking;Diese zukunftsweisenden Maßnahmen sollen die Umweltauswirkungen minimieren.;These forward-looking measures are intended to minimize environmental impact.
+C1;verantwortungsbewusst;responsible;Ein verantwortungsbewusster Umgang mit Ressourcen ist entscheidend für die Nachhaltigkeit.;Responsible resource management is crucial for sustainability.
+C1;nachhaltig;sustainable;Die Firma setzt sich für nachhaltige Geschäftspraktiken ein.;The company is committed to sustainable business practices.
+C1;anspruchsvoll;challenging;Das Projekt stellte eine anspruchsvolle Herausforderung für das Team dar.;The project presented a challenging challenge for the team.
+C1;respektvoll;respectful;Es ist wichtig, respektvoll mit unterschiedlichen Meinungen umzugehen.;It's important to be respectful of different opinions.
+C1;vielseitig;versatile;Der Künstler ist vielseitig und beherrscht verschiedene Kunstformen.;The artist is versatile and masters various forms of art.
+C1;nachdenklich;thoughtful;Sein nachdenklicher Blick verriet, dass er über die Frage ernsthaft nachdachte.;His thoughtful look revealed that he was seriously pondering the question.
+C1;kreativ;creative;Die kreativen Ideen des Teams führten zu innovativen Lösungen.;The team's creative ideas led to innovative solutions.
+C1;wertschätzend;appreciative;Ein wertschätzender Umgang miteinander fördert ein positives Arbeitsklima.;Appreciative interaction promotes a positive work environment.
+C1;lebensfroh;cheerful;Trotz der Herausforderungen bleibt sie lebensfroh und optimistisch.;Despite the challenges, she remains cheerful and optimistic.
+C1;eloquent;eloquent;Der eloquente Redner beeindruckte das Publikum mit seinen Worten.;The eloquent speaker impressed the audience with his words.
+C1;facettenreich;multifaceted;Die Stadt hat eine facettenreiche Kultur mit vielen verschiedenen Einflüssen.;The city has a multifaceted culture with many different influences.
+C1;kompetent;competent;Das Team besteht aus hochkompetenten Fachleuten.;The team consists of highly competent professionals.
+C1;aufregend;exciting;Die aufregende Neuigkeit verbreitete sich schnell in der ganzen Stadt.;The exciting news spread quickly throughout the city.
+C1;gehaltvoll;substantial;Die Diskussion war geistreich und enthielt viele gehaltvolle Argumente.;The discussion was insightful and included many substantial arguments.
+C1;intensiv;intense;Die Arbeit erfordert eine intensive Auseinandersetzung mit komplexen Problemen.;The job requires an intense engagement with complex problems.
+C1;bereichernd;enriching;Die interkulturelle Erfahrung war für sie persönlich sehr bereichernd.;The intercultural experience was personally very enriching for her.
+C1;einfallsreich;resourceful;Die einfallsreiche Lösung des Problems überraschte das gesamte Team.;The resourceful solution to the problem surprised the entire team.
+C1;umsichtig;prudent;Sein umsichtiger Ansatz führte zu klugen Entscheidungen in schwierigen Situationen.;His prudent approach led to wise decisions in difficult situations.
+C1;zugänglich;approachable;Die Führungskraft ist zugänglich und steht den Mitarbeitern für Fragen zur Verfügung.;The leader is approachable and available to employees for questions.
+C1;ausdrucksstark;expressive;Die ausdrucksstarken Gemälde des Künstlers sprechen viele Betrachter an.;The expressive paintings of the artist resonate with many viewers.
+C1;geschmackvoll;tasteful;Die Inneneinrichtung des Restaurants ist geschmackvoll und ansprechend gestaltet.;The interior of the restaurant is tastefully and attractively designed.
+C1;verbindlich;obliging;Die verbindliche Art des Kundenservice trägt zur Zufriedenheit der Kunden bei.;The obliging manner of customer service contributes to customer satisfaction.
+C1;eloquent;articulate;Seine eloquente Präsentation beeindruckte das Publikum.;His articulate presentation impressed the audience.
+C1;unkonventionell;unconventional;Die Designer präsentierten eine unkonventionelle Kollektion auf der Modenschau.;The designers presented an unconventional collection at the fashion show.
+C1;durchdacht;well-thought-out;Das Konzept des Projekts war gut durchdacht und strategisch geplant.;The project's concept was well-thought-out and strategically planned.
+C1;unabhängig;independent;Die Organisation arbeitet unabhängig von politischen Einflüssen.;The organization operates independently of political influences.
+C1;selbstbewusst;self-assured;Sie trat selbstbewusst vor die Gruppe und präsentierte ihre Ideen.;She confidently stepped in front of the group and presented her ideas.
+B1;freundlich;friendly;Der freundliche Nachbar half uns, als wir Hilfe brauchten.;The friendly neighbor helped us when we needed assistance.
+C1;proaktiv;proactive;Proaktive Maßnahmen können Probleme frühzeitig lösen.;Proactive measures can solve problems early on.
+C1;effizient;efficient;Die effiziente Nutzung von Ressourcen ist für jedes Unternehmen wichtig.;Efficient use of resources is important for every business.
+C1;nuanciert;nuanced;Seine Argumentation war nuanciert und berücksichtigte viele Facetten des Themas.;His argumentation was nuanced and considered many facets of the issue.
+C1;raffiniert;clever;Die raffinierte Lösung des Ingenieurs sparte Zeit und Kosten.;The engineer's clever solution saved time and costs.
+C1;herausragend;outstanding;Seine herausragenden Leistungen wurden mit einer Auszeichnung belohnt.;His outstanding achievements were rewarded with an award.
+C1;fundiert;well-founded;Die fundierte Forschung lieferte wichtige Erkenntnisse für die Medizin.;The well-founded research provided crucial insights for medicine.
+C1;ganzheitlich;holistic;Die ganzheitliche Betrachtung des Problems führte zu umfassenden Lösungen.;The holistic approach to the problem led to comprehensive solutions.
+C1;facettenreich;varied;Die facettenreiche Karriere des Künstlers erstreckt sich über verschiedene Genres.;The artist's varied career spans across different genres.
+C1;anspruchsvoll;ambitious;Das anspruchsvolle Projekt erfordert eine sorgfältige Planung und Umsetzung.;The ambitious project requires careful planning and execution.
+C1;eloquent;expressive;Ihre eloquente Sprache macht ihre Reden besonders überzeugend.;Her expressive language makes her speeches particularly convincing.
+C1;innovativ;pioneering;Das Unternehmen setzt auf innovative Technologien und ist wegweisend in der Branche.;The company relies on pioneering technologies and is a trailblazer in the industry.
+C1;hervorragend;excellent;Die hervorragende Leistung des Teams wurde von allen anerkannt.;The team's excellent performance was acknowledged by everyone.
+C1;profund;profound;Die Diskussion führte zu profundem Verständnis über die zugrunde liegenden Probleme.;The discussion led to a profound understanding of the underlying issues.
+C1;unerschütterlich;unshakable;Seine unerschütterliche Entschlossenheit führte zum Erfolg des Projekts.;His unshakable determination led to the success of the project.
+C1;gewissenhaft;conscientious;Die gewissenhafte Arbeit des Teams sorgte für hochwertige Ergebnisse.;The team's conscientious work ensured high-quality results.
+C1;behutsam;careful;Bei der Restaurierung des Kunstwerks wurde behutsam vorgegangen, um es zu erhalten.;Careful steps were taken in the restoration of the artwork to preserve it.
+C1;visionär;visionary;Der visionäre Unternehmer erkannte frühzeitig Markttrends und investierte erfolgreich.;The visionary entrepreneur early recognized market trends and invested successfully.
+C1;präzise;precise;Die präzise Formulierung des Vertrags verhinderte Missverständnisse.;The precise wording of the contract prevented misunderstandings.
+C1;konstruktiv;constructive;Die konstruktive Zusammenarbeit führte zu effektiven Lösungen für alle Beteiligten.;The constructive collaboration led to effective solutions for all parties involved.
+C1;ausgezeichnet;superb;Seine ausgezeichneten Fähigkeiten machten ihn zum Experten auf seinem Gebiet.;His superb skills made him an expert in his field.
+C1;versiert;adept;Der versierte Ingenieur konnte komplexe Probleme schnell lösen.;The adept engineer could solve complex problems quickly.
+C1;effektiv;effective;Die effektive Verwaltung der Ressourcen führte zu einer Kostenreduktion.;The effective management of resources resulted in cost reduction.
+C1;solidarisch;solidary;In Zeiten der Krise zeigte die solidarische Gemeinschaft ihre Stärke.;In times of crisis, the solidary community demonstrated its strength.
+C1;akribisch;meticulous;Die akribische Analyse der Daten lieferte präzise Ergebnisse.;The meticulous analysis of the data provided precise results.
+C1;unbestritten;undisputed;Seine unbestrittenen Fähigkeiten machten ihn zum Marktführer in der Branche.;His undisputed skills made him a market leader in the industry.
+C1;profiliert;profiled;Der profilierte Experte wurde als Gastredner zu internationalen Konferenzen eingeladen.;The profiled expert was invited as a guest speaker to international conferences.
+C1;virtuos;virtuoso;Der virtuose Musiker beherrscht sein Instrument auf höchstem Niveau.;The virtuoso musician masters his instrument at the highest level.
+C1;exquisit;exquisite;Das Restaurant serviert exquisites Essen in einer eleganten Atmosphäre.;The restaurant serves exquisite food in an elegant atmosphere.
+C1;raffiniert;artful;Die raffinierte Gestaltung des Produkts beeindruckte die Kunden.;The artful design of the product impressed the customers.
+B1;typisch;typical;Das ist ein typisches Beispiel für deutsche Kultur.;This is a typical example of German culture.
+C2;hermetisch;hermetic;Die Diskussion war hermetisch abgeschlossen.;The discussion was hermetically sealed.
+C2;ephemer;ephemeral;Das Glück ist oft nur von ephemeraler Natur.;Happiness is often of ephemeral nature.
+C2;anachronistisch;anachronistic;Sein Verhalten erschien in dieser modernen Welt anachronistisch.;His behavior seemed anachronistic in this modern world.
+C2;facettenreich;multifaceted;Die Geschichte ist facettenreich und komplex.;The story is multifaceted and complex.
+C2;eklektisch;eclectic;Sein Geschmack ist eher eklektisch und vielseitig.;His taste is rather eclectic and diverse.
+C2;quintessenziell;quintessential;Die Kunstwerke repräsentieren die quintessentielle Schönheit.;The artworks represent the quintessential beauty.
+C2;transzendental;transcendental;Die Idee der Liebe kann oft als transzendental betrachtet werden.;The concept of love can often be considered as transcendental.
+C2;konfuzianisch;Confucian;Seine Philosophie ist stark von konfuzianischen Prinzipien beeinflusst.;His philosophy is heavily influenced by Confucian principles.
+C2;zenith;zenith;Die Sonne erreichte gerade ihren Zenit.;The sun was just reaching its zenith.
+C2;invektiv;invective;Seine Worte waren voller invektiver Äußerungen.;His words were full of invective expressions.
+C2;obskur;obscure;Die Bedeutung dieses Gedichts bleibt oft obskur.;The meaning of this poem often remains obscure.
+C2;inexorabel;inexorable;Die Konsequenzen waren leider inexorabel.;The consequences were unfortunately inexorable.
+C2;ephemär;ephemeral;Die Schönheit der Blumen ist oft ephemär.;The beauty of flowers is often ephemeral.
+C2;plutokratisch;plutocratic;Manchmal wird das politische System als plutokratisch kritisiert.;Sometimes, the political system is criticized as plutocratic.
+C2;konjunktiv;subjunctive;Der Konjunktiv wird in der Literatur oft für hypothetische Situationen verwendet.;The subjunctive is often used in literature for hypothetical situations.
+C2;mythisch;mythical;Die Geschichte hat einen mythischen Ursprung.;The story has a mythical origin.
+C2;resigniert;resigned;Er wirkte resigniert angesichts der Herausforderungen.;He seemed resigned in the face of challenges.
+C2;idiosynkratisch;idiosyncratic;Sein Verhalten war äußerst idiosynkratisch.;His behavior was highly idiosyncratic.
+C2;intransigent;intransigent;Die Verhandlungen verliefen aufgrund seiner intransigenten Haltung schwierig.;The negotiations were difficult due to his intransigent attitude.
+C2;reminiszenz;reminiscence;Sein Lächeln war eine Reminiszenz an vergangene Zeiten.;His smile was a reminiscence of times past.
+C2;sonor;sonorous;Seine Stimme hatte einen sonoren Klang.;His voice had a sonorous tone.
+C2;kryptisch;cryptic;Seine Nachrichten waren oft kryptisch und schwer zu verstehen.;His messages were often cryptic and hard to understand.
+C2;kohärent;coherent;Die Argumentation des Autors war nicht kohärent und schwer zu folgen.;The author's argumentation was not coherent and hard to follow.
+C2;disparat;disparate;Die beiden Ideen sind disparat und schwer miteinander zu vereinen.;The two ideas are disparate and difficult to reconcile.
+C2;kosmopolitisch;cosmopolitan;Die Stadt hat ein kosmopolitisches Flair mit vielen internationalen Einflüssen.;The city has a cosmopolitan flair with many international influences.
+C2;lapidar;laconic;Seine Antworten waren oft lapidar und knapp.;His answers were often laconic and brief.
+C2;obsolet;obsolete;Einige Technologien sind mittlerweile obsolet geworden.;Some technologies have become obsolete over time.
+C2;paradox;paradoxical;Die Situation war paradox, da sie sowohl traurig als auch amüsant war.;The situation was paradoxical as it was both sad and amusing.
+C2;perplex;perplexed;Seine Antwort ließ mich perplex zurück.;His response left me perplexed.
+C2;polemisch;polemical;Der Artikel enthielt viele polemische Aussagen.;The article contained many polemical statements.
+C2;anomisch;anomic;In Zeiten des Wandels kann eine anomische Atmosphäre entstehen.;In times of change, an anomic atmosphere can arise.
+C2;egalitär;egalitarian;Die Gesellschaft strebt nach einer egalitären Verteilung von Ressourcen.;Society aims for an egalitarian distribution of resources.
+C2;ekstatisch;ecstatic;Die Menschen waren ekstatisch vor Freude über die Nachricht.;People were ecstatic with joy at the news.
+C2;exponentiell;exponential;Die technologische Entwicklung verläuft exponentiell.;Technological development is progressing exponentially.
+C2;facettenreich;multifaceted;Die Persönlichkeit des Künstlers ist äußerst facettenreich.;The artist's personality is extremely multifaceted.
+C2;fragil;fragile;Die Friedensvereinbarung ist noch fragil und erfordert Aufmerksamkeit.;The peace agreement is still fragile and requires attention.
+C2;hedonistisch;hedonistic;Manche Menschen leben nach einem hedonistischen Lebensstil.;Some people live according to a hedonistic lifestyle.
+C2;ineffabel;ineffable;Die Schönheit dieses Ortes ist geradezu ineffabel.;The beauty of this place is truly ineffable.
+C2;juxtaposition;Juxtaposition;Die Juxtaposition von Farben erzeugt einen interessanten Effekt.;The juxtaposition of colors creates an interesting effect.
+C2;konfektioniert;pre-fabricated;Die Häuser waren konfektioniert und wurden schnell aufgebaut.;The houses were pre-fabricated and erected quickly.
+C2;lamentieren;lament;Die Trauernden begannen zu lamentieren.;The mourners began to lament.
+C2;majestätisch;majestic;Die majestätischen Berge erheben sich vor uns.;The majestic mountains rise before us.
+C2;Nostalgie;nostalgia;Manchmal überkommt einen eine Welle der Nostalgie.;Sometimes a wave of nostalgia washes over you.
+C2;obligatorisch;obligatory;Die Teilnahme an der Schulveranstaltung war obligatorisch.;Attendance at the school event was obligatory.
+C2;paradigmatisch;paradigmatic;Dieses Experiment ist paradigmatisch für zukünftige Forschung.;This experiment is paradigmatic for future research.
+C2;quixotisch;quixotic;Sein Plan erschien vielen als quixotisch und unrealistisch.;His plan seemed quixotic and unrealistic to many.
+C2;rekapitulieren;recapitulate;Lassen Sie uns kurz die wichtigsten Punkte rekapitulieren.;Let's briefly recapitulate the main points.
+C2;subversiv;subversive;Seine Kunst galt als subversiv und herausfordernd.;His art was considered subversive and challenging.
+C2;tantalisch;tantalizing;Die tantalische Aussicht auf Erfolg motivierte ihn weiterzumachen.;The tantalizing prospect of success motivated him to keep going.
+C2;unprätentiös;unpretentious;Das Restaurant ist einfach und unprätentiös, aber das Essen ist hervorragend.;The restaurant is simple and unpretentious, but the food is excellent.
+B1; die Anpassung; the adaptation; Die Anpassung an das neue System dauerte lange.; The adaptation to the new system took a long time.
+B1; bestimmen; to determine; Der Manager bestimmt die Strategie.; The manager determines the strategy.
+B1; die Einstellung; the attitude; Ihre positive Einstellung ist ansteckend.; Her positive attitude is contagious.
+B1; erweitern; to expand; Sie planen, ihr Geschäft zu erweitern.; They plan to expand their business.
+B1; die Fertigkeit; the skill; Sprachfertigkeiten sind im Beruf wichtig.; Language skills are important in the profession.
+B1; die Gestaltung; the design; Die Gestaltung des Raumes ist modern.; The design of the room is modern.
+B1; die Herausgabe; the release; Die Herausgabe des Buches ist für nächstes Jahr geplant.; The release of the book is planned for next year.
+B1; die Integration; the integration; Die Integration neuer Mitarbeiter ist ein wichtiger Prozess.; The integration of new employees is an important process.
+B1; die Kompetenz; the competence; Seine technische Kompetenz ist beeindruckend.; His technical competence is impressive.
+B1; die Perspektive; the perspective; Das gibt eine neue Perspektive auf das Problem.; That gives a new perspective on the problem.
+B1; die Priorität; the priority; Gesundheit ist unsere oberste Priorität.; Health is our top priority.
+B1; die Ressource; the resource; Natürliche Ressourcen müssen geschützt werden.; Natural resources must be protected.
+B1; die Strategie; the strategy; Die Strategie des Unternehmens ändert sich.; The company's strategy is changing.
+B1; übernehmen; to take over; Er wird die Leitung des Projekts übernehmen.; He will take over the management of the project.
+B1; die Umsetzung; the implementation; Die Umsetzung des Plans beginnt nächste Woche.; The implementation of the plan starts next week.
+B1; die Veränderung; the change; Diese Veränderung wird viele Vorteile bringen.; This change will bring many benefits.
+B1; die Wahrnehmung; the perception; Die Wahrnehmung der Marke ist positiv.; The perception of the brand is positive.
+B1; die Zielsetzung; the goal setting; Die Zielsetzung des Teams ist ambitioniert.; The team's goal setting is ambitious.
+B1; die Anwendung; the application; Die Anwendung dieser Theorie ist komplex.; The application of this theory is complex.
+B1; die Bewertung; the evaluation; Die Bewertung der Ergebnisse dauert an.; The evaluation of the results is ongoing.
+B2; die Voraussetzung; the prerequisite; Die Voraussetzung für diesen Kurs ist Grundkenntnisse in Mathematik.; The prerequisite for this course is basic knowledge of mathematics.
+B2; nachhaltig; sustainable; Nachhaltige Entwicklung ist für die Umwelt wichtig.; Sustainable development is important for the environment.
+B2; die Umsetzung; the implementation; Die Umsetzung des Plans erfordert Zeit.; The implementation of the plan takes time.
+B2; die Kompetenz; the competence; Seine Kompetenz in diesem Bereich ist anerkannt.; His competence in this field is recognized.
+B2; die Effizienz; the efficiency; Effizienz ist in der Produktion entscheidend.; Efficiency is crucial in production.
+B2; die Innovation; the innovation; Innovation treibt den technologischen Fortschritt voran.; Innovation drives technological progress.
+B2; der Konsens; the consensus; Es wurde ein Konsens unter den Teammitgliedern erreicht.; A consensus was reached among the team members.
+B2; die Perspektive; the perspective; Sie betrachtet das Problem aus einer anderen Perspektive.; She looks at the problem from a different perspective.
+B2; die Resilienz; the resilience; Resilienz ist wichtig, um Krisen zu überstehen.; Resilience is important to overcome crises.
+B2; die Synergie; the synergy; Synergien zwischen den Abteilungen fördern die Produktivität.; Synergies between departments enhance productivity.
+B2; die Diversifikation; the diversification; Diversifikation ist ein Schlüssel zum Geschäftserfolg.; Diversification is a key to business success.
+B2; die Integrität; the integrity; Integrität ist in der Politik essenziell.; Integrity is essential in politics.
+B2; der Paradigmenwechsel; the paradigm shift; Der Paradigmenwechsel in der Industrie ist offensichtlich.; The paradigm shift in the industry is evident.
+B2; die Nachhaltigkeit; the sustainability; Nachhaltigkeit beeinflusst unsere Entscheidungen.; Sustainability influences our decisions.
+B2; die Autonomie; the autonomy; Autonomie in der Arbeit erhöht die Mitarbeiterzufriedenheit.; Autonomy at work increases employee satisfaction.
+B2; die Kollaboration; the collaboration; Kollaboration ist entscheidend für den Erfolg des Projekts.; Collaboration is crucial for the success of the project.
+B2; die Disruption; the disruption; Technologische Disruption verändert die Wirtschaftslandschaft.; Technological disruption changes the economic landscape.
+B2; die Legitimität; the legitimacy; Die Legitimität der Regierung wird manchmal in Frage gestellt.; The government's legitimacy is sometimes questioned.
+B2; die Rationalisierung; the rationalization; Die Rationalisierung der Prozesse führt zu Kosteneinsparungen.; The rationalization of processes leads to cost savings.
+B2; die Transparenz; the transparency; Transparenz in der Verwaltung fördert das Vertrauen der Bürger.; Transparency in administration fosters citizens' trust.
+B2; die Integration; the integration; Die Integration neuer Mitglieder ist wichtig für das Team.; The integration of new members is important for the team.
+B2; die Kognition; the cognition; Kognition spielt eine zentrale Rolle in der Psychologie.; Cognition plays a central role in psychology.
+B2; die Legitimation; the legitimization; Die Legitimation dieser Politik wird oft diskutiert.; The legitimization of this policy is often discussed.
+B2; modifizieren; to modify; Wir müssen den Plan modifizieren, um erfolgreich zu sein.; We need to modify the plan to be successful.
+B2; die Präzision; the precision; Präzision ist in wissenschaftlichen Experimenten unerlässlich.; Precision is essential in scientific experiments.
+B2; die Rationalität; the rationality; Rationalität ist ein wichtiger Aspekt der Entscheidungsfindung.; Rationality is an important aspect of decision making.
+B2; der Slogan; the slogan; Der Slogan der Kampagne ist leicht zu merken.; The campaign's slogan is easy to remember.
+B2; die Spekulation; the speculation; Es gibt viele Spekulationen über die zukünftige Marktentwicklung.; There is a lot of speculation about future market development.
+B2; die Strategie; the strategy; Eine gute Strategie ist entscheidend für den Erfolg.; A good strategy is crucial for success.
+B2; die Validität; the validity; Die Validität der Studie wurde bestätigt.; The validity of the study was confirmed.
+B2; die Variation; the variation; Variation in der Diät kann gesund sein.; Variation in diet can be healthy.
+B2; die Vision; the vision; Seine Vision für das Unternehmen ist innovativ.; His vision for the company is innovative.
+B2; die Volatilität; the volatility; Volatilität im Aktienmarkt kann riskant sein.; Volatility in the stock market can be risky.
+B2; die Ambivalenz; the ambivalence; Ambivalenz in dieser Frage ist normal.; Ambivalence on this issue is normal.
+B2; die Dialektik; the dialectic; Die Dialektik zwischen diesen Ideen ist interessant.; The dialectic between these ideas is interesting.
+B2; die Homogenität; the homogeneity; Homogenität in der Gruppe kann die Kreativität einschränken.; Homogeneity in the group can limit creativity.
+B2; die Polarität; the polarity; Die Polarität in der Debatte wird immer deutlicher.; The polarity in the debate is becoming more apparent.
+B2; die Synergie; the synergy; Synergieeffekte können die Effizienz steigern.; Synergy effects can increase efficiency.
+B2; der Transfer; the transfer; Der Transfer von Wissen ist in Bildungseinrichtungen zentral.; The transfer of knowledge is central in educational institutions.
+B2; die Urbanisierung; the urbanization; Urbanisierung hat bedeutende soziale Auswirkungen.; Urbanization has significant social impacts.
+C1; die Ambiguität; the ambiguity; Die Ambiguität des Textes lässt mehrere Interpretationen zu.; The ambiguity of the text allows for multiple interpretations.
+C1; konstituieren; to constitute; Diese Ereignisse konstituieren einen Wendepunkt in der Geschichte.; These events constitute a turning point in history.
+C1; die Diskrepanz; the discrepancy; Es gibt eine große Diskrepanz zwischen Theorie und Praxis.; There is a large discrepancy between theory and practice.
+C1; extrapolieren; to extrapolate; Aus den Daten können wir zukünftige Trends extrapolieren.; From the data, we can extrapolate future trends.
+C1; die Idiosynkrasie; the idiosyncrasy; Die Idiosynkrasie des Autors spiegelt sich in seinem Schreibstil wider.; The author's idiosyncrasy is reflected in his writing style.
+C1; die Implikation; the implication; Die Implikation dieser Entdeckung ist enorm.; The implication of this discovery is enormous.
+C1; die Konnotation; the connotation; Das Wort hat eine negative Konnotation.; The word has a negative connotation.
+C1; die Metapher; the metaphor; Er verwendet oft Metaphern in seiner Poesie.; He often uses metaphors in his poetry.
+C1; die Paradoxie; the paradox; Die Paradoxie dieser Situation ist offensichtlich.; The paradox of this situation is obvious.
+C1; die Rhetorik; the rhetoric; Die Rhetorik des Politikers ist überzeugend.; The politician's rhetoric is persuasive.
+C1; die Synthese; the synthesis; Die Synthese von alten und neuen Ideen kann fruchtbar sein.; The synthesis of old and new ideas can be fruitful.
+C1; die Transzendenz; the transcendence; Transzendenz ist ein zentrales Thema in vielen Religionen.; Transcendence is a central theme in many religions.
+C1; die Allegorie; the allegory; Diese Geschichte ist eine Allegorie auf die menschliche Natur.; This story is an allegory for human nature.
+C1; die Dichotomie; the dichotomy; Die Dichotomie zwischen Gut und Böse ist in vielen Kulturen vorhanden.; The dichotomy between good and evil exists in many cultures.
+C1; die Epistemologie; the epistemology; Epistemologie ist der Bereich der Philosophie, der sich mit Wissen beschäftigt.; Epistemology is the area of philosophy concerned with knowledge.
+C1; die Heuristik; the heuristic; Heuristiken sind nützlich, um komplexe Probleme zu lösen.; Heuristics are useful for solving complex problems.
+C1; die Ironie; the irony; Die Ironie der Situation war ihr nicht entgangen.; The irony of the situation did not escape her.
+C1; die Juxtaposition; the juxtaposition; Die Juxtaposition dieser Gegensätze erzeugt einen interessanten Effekt.; The juxtaposition of these opposites creates an interesting effect.
+C1; die Kontingenz; the contingency; Kontingenzpläne sind wichtig für unvorhergesehene Ereignisse.; Contingency plans are important for unforeseen events.
+C1; die Paradigmatik; the paradigmatic; Sein Ansatz ist paradigmatisch für diese Schule des Denkens.; His approach is paradigmatic for this school of thought.
+C1; die Abstraktion; the abstraction; In der modernen Kunst spielt Abstraktion eine große Rolle.; In modern art, abstraction plays a major role.
+C1; die Akkulturation; the acculturation; Akkulturation ist ein wichtiger Prozess bei der Migration.; Acculturation is an important process in migration.
+C1; die Apotheose; the apotheosis; Seine Wahl zum Präsidenten war die Apotheose seiner politischen Karriere.; His election as president was the apotheosis of his political career.
+C1; die Demagogie; the demagogy; Die Demagogie in seiner Rede war offensichtlich.; The demagogy in his speech was obvious.
+C1; die Divergenz; the divergence; Es gibt eine zunehmende Divergenz zwischen den beiden Gruppen.; There is an increasing divergence between the two groups.
+C1; die Eklektizismus; the eclecticism; Sein Stil ist bekannt für seinen Eklektizismus.; His style is known for its eclecticism.
+C1; die Eloquenz; the eloquence; Ihre Eloquenz beim Sprechen ist bemerkenswert.; Her eloquence in speaking is remarkable.
+C1; die Entropie; the entropy; Entropie ist ein zentrales Konzept in der Thermodynamik.; Entropy is a central concept in thermodynamics.
+C1; die Epiphanie; the epiphany; Er hatte eine Epiphanie bezüglich seiner Lebensziele.; He had an epiphany regarding his life goals.
+C1; die Hypothese; the hypothesis; Die Hypothese muss noch getestet werden.; The hypothesis still needs to be tested.
+C1; die Idylle; the idyll; Das Dorf ist eine perfekte ländliche Idylle.; The village is a perfect rural idyll.
+C1; die Ironie; the irony; Die Ironie des Schicksals ist manchmal unvorhersehbar.; The irony of fate is sometimes unpredictable.
+C1; die Katharsis; the catharsis; Das Ende des Films bot eine emotionale Katharsis.; The end of the movie offered an emotional catharsis.
+C1; die Metamorphose; the metamorphosis; Die Metamorphose des Schmetterlings ist faszinierend.; The metamorphosis of the butterfly is fascinating.
+C1; die Omnipräsenz; the omnipresence; Die Omnipräsenz des Internets hat unser Leben verändert.; The omnipresence of the internet has changed our lives.
+C1; die Parabel; the parable; Diese Geschichte ist eine Parabel über Gier.; This story is a parable about greed.
+C1; die Rhetorik; the rhetoric; Seine Rhetorik ist sehr überzeugend.; His rhetoric is very persuasive.
+C1; die Symbiose; the symbiosis; Die Symbiose zwischen den beiden Arten ist einzigartig.; The symbiosis between the two species is unique.
+C1; die Synthese; the synthesis; Die Synthese von alten und neuen Ideen führt zu Innovationen.; The synthesis of old and new ideas leads to innovations.
+C1; die Transzendenz; the transcendence; Transzendenz ist ein häufiges Thema in der Religion.; Transcendence is a common theme in religion.
+C1; die Utopie; the utopia; Seine Vision einer Gesellschaft ist eine Utopie.; His vision of a society is a utopia.
+C1; der Widerspruch; the contradiction; Seine Aussagen enthalten einen klaren Widerspruch.; His statements contain a clear contradiction.
+C1; die Zenit; the zenith; Seine Karriere erreichte ihren Zenit in den 1990er Jahren.; His career reached its zenith in the 1990s.
+C1; die Aberration; the aberration; Dieses Verhalten ist eine Aberration von der Norm.; This behavior is an aberration from the norm.
+C1; die Affinität; the affinity; Sie hat eine natürliche Affinität zur Musik.; She has a natural affinity for music.
+C1; die Anomalie; the anomaly; Diese Daten zeigen eine statistische Anomalie.; These data show a statistical anomaly.
+C1; die Antithese; the antithesis; Seine Ideen bilden die Antithese zu herkömmlichen Ansichten.; His ideas form the antithesis to conventional views.
+C1; die Axiom; the axiom; Dieses Axiom ist in der Mathematik grundlegend.; This axiom is fundamental in mathematics.
+C1; die Dekonstruktion; the deconstruction; Die Dekonstruktion traditioneller Narrative ist ein Schlüsselthema seiner Arbeit.; The deconstruction of traditional narratives is a key theme in his work.
+C1; die Dichotomie; the dichotomy; Die Dichotomie zwischen Realität und Fiktion wird oft diskutiert.; The dichotomy between reality and fiction is often discussed.

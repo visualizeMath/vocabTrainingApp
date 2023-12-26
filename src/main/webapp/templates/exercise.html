@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabApp</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">VocabApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('exercise')}}">Exercise</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Operations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/themes">Find themes</a>
+                <a class="dropdown-item" href="/delete_all">Remove all words</a>
+                
+                <a class="dropdown-item" href="#">Show all</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container mt-3 col-md-10">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Guess the english equivalent of the given word
+                      </div>
+                    <div class="card-body">
+                        {% if word %}
+                            <h5 class="card-title" id="german-word">{{word.german_word}}</h5>
+                        {% else %}  
+                            <h5 class="card-title" id="german-word">No word available</h5>  
+                        {% endif %}      
+                        <div class="form-group">
+                            <form id="word-form">
+                                <input type="text" id="user-guess" class="form-control mt-4 text-center" placeholder="your guess?">
+                                <button type="submit" id="check-button" class="btn btn-primary mt-4">Check</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <h5>Your Score: <span id="current-score">0</span></h5>
+                        <h6>Step: <span id="step-count">0</span></h6>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script>
+        $(document).ready(function() {
+            $('#check-button').click(function() {
+                var germanWord = $('#german-word').text();
+                var userGuess = $('#user-guess').val();
+                var currentScore = parseInt($('#current-score').text());
+                var stepCount = parseInt($('#step-count').text());
+    
+                $.ajax({
+                    url: '/check_word',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        german_word: germanWord,
+                        user_guess: userGuess,
+                        current_score: currentScore,
+                        step_count: stepCount
+                    }),
+                    success: function(response) {
+                        // Update your UI based on response
+                        $('#current-score').text(response.current_score);
+                        $('#step-count').text(response.step_count);
+                        if (response.new_word) {
+                            $('#german-word').text(response.new_word);
+                        }
+                        $('#user-guess').val('');
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

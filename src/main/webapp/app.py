@@ -33,6 +33,10 @@ class LanguageData(db.Model):
     german_example = db.Column(db.String)
     english_example = db.Column(db.String)
     in_dictionary = db.Column(db.Boolean)
+class Score(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    score = db.Column(db.Integer, nullable=False)
+    play_date = db.Column(db.DateTime, nullable=False)
 
 # Function to create the application context
 def create_app_context():
@@ -55,6 +59,62 @@ def get_random_word():
         flash('vocab_level could not be found on page.', 'error')        
         
     return render_template('index.html', random_word=None)
+
+@app.route('/exercise')
+def exercise():
+    # Get a random word where in_dictionary = 1
+    words = LanguageData.query.filter_by(in_dictionary=1).all()
+    random_word = random.choice(words) if words else None
+    return render_template('exercise.html', word=random_word)
+
+@app.route('/check_word',methods=['POST'])
+def check_word():
+    data = request.json
+    german_word = data['german_word']
+    user_guess = data['user_guess']
+    current_score = data['current_score']
+    step_count = data['step_count']
+
+    # Find the matching word in the database
+    word_entry = LanguageData.query.filter_by(german_word=german_word, in_dictionary=1).first()
+
+    if word_entry and user_guess.lower() == word_entry.english_word.lower():
+        # Update score based on level
+        score_map = {'A1': 2, 'A2': 4, 'B1': 8, 'B2': 10, 'C1': 15, 'C2': 20}
+        current_score += score_map.get(word_entry.level, 0)
+        correct = True
+    else:
+        correct = False
+
+    # Increment step count and check if game is over
+    step_count += 1
+    game_over = step_count >= 5
+
+    # Fetch a new word if the game is not over
+    new_word = None
+    if not game_over:
+        new_word = LanguageData.query.filter_by(in_dictionary=1).order_by(db.func.random()).first()
+
+    # Save the score if the game is over
+    if game_over:
+        new_score_entry = Score(score=current_score, play_date=datetime.now())
+        db.session.add(new_score_entry)
+        db.session.commit()
+
+    return jsonify({
+        'correct': correct,
+        'new_word': new_word.german_word if new_word else None,
+        'current_score': current_score,
+        'game_over': game_over
+    })
+
+    
+
+@app.route('/get_word', methods=['GET'])
+def get_word():
+    # Fetch a random word
+    word = LanguageData.query.filter_by(in_dictionary=1).order_by(func.random()).first()
+    return jsonify(german_word=word.german_word, level=word.level)
 
 # Function to populate the database from the text file
 def populate_database(file_path):
@@ -252,64 +312,6 @@ def delete_all():
     return redirect(url_for('index'))
 import requests
 
-
-@app.route('/themes', methods=['GET','POST'])  
-def find_theme_of_word():
-    try:
-        if request.method == 'GET':
-            return render_template('operations.html') 
-        elif request.method =='POST':
-            # Get the current working directory
-            current_dir = os.getcwd()
-
-            file_path_api = 'api_keys.txt'
-          
-            url = "https://twinword-twinword-bundle-v1.p.rapidapi.com/word_theme/"
-            querystring = {"entry":request.form.get('p_word')}
-            
-            api_key, api_host = read_api_keys(file_path_api)
-
-            headers = {
-                "X-RapidAPI-Key": api_key,
-                "X-RapidAPI-Host": api_host
-            }
-  
-            response = requests.get(url, headers=headers, params=querystring)
-            data =response.json()
-            if 'theme' in data:                 
-                return render_template('operations.html',themes=data['theme'][:],examples=None)
-            else:
-                # Handle the case where 'theme' key is not present in the response
-                return render_template('operations.html', error_message="Invalid response from the API")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error finding theme of the word: {e}")
-        return None
-
-def read_api_keys(file_path_api):
-    try:
-        # Get the current working directory
-        current_dir = os.getcwd()
-        # print("cUR DIRECTORY: "+current_dir)
-        # Construct the full file path
-        vocab_training_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-        full_file_path = os.path.join(vocab_training_dir, file_path_api)
-       
-        with open(full_file_path, 'r') as file:
-            content = file.read()
-            match = re.search(r'"X-RapidAPI-Key":"(.*?)","X-RapidAPI-Host":"(.*?)"', content)
-            if match:
-                api_key = match.group(1)
-                print(api_key)
-                api_host = match.group(2)
-                print(api_host)
-                return api_key, api_host
-            else:
-                # Handle the case where the pattern is not found in the file
-                raise ValueError("API key and host pattern not found in the file")
-    except FileNotFoundError:
-        # Handle the case where the file is not found
-        raise FileNotFoundError(f"File not found: {file_path_api}")
     
 @app.route('/add2dict/<int:row_id>', methods=['POST'])
 def add2dict(row_id):
