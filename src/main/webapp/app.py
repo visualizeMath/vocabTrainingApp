@@ -66,6 +66,10 @@ def exercise():
     words = LanguageData.query.filter_by(in_dictionary=1).all()
     random_word = random.choice(words) if words else None
     return render_template('exercise.html', word=random_word)
+@app.route('/exercise_flip')
+def exercise_flip():
+    words = LanguageData.query.filter_by(in_dictionary=True).all()
+    return render_template('exercise2.html', words=words)
 
 @app.route('/check_word',methods=['POST'])
 def check_word():
@@ -187,27 +191,7 @@ class TextEntry(db.Model):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    if request.method == 'POST':
-        german_text = request.form['txtGerman']
-        turkish_text = request.form['txtTurkish']
-
-        # Check if a record with the same german_text already exists
-        existing_entry = TextEntry.query.filter_by(german_text=german_text).first()
-
-        if existing_entry:
-            flash('This word has already been created.', 'warning')
-        else:
-            entry = TextEntry(german_text=german_text, turkish_text=turkish_text)
-
-            try:
-                db.session.add(entry)
-                db.session.commit()
-                flash('Operation successful!', 'success')
-  
-            except Exception as e:
-                db.session.rollback()
-                flash(f'Error: {str(e)}', 'error')
-    elif request.method == 'GET':
+    if request.method == 'GET':
         page = request.args.get('page', 1, type=int)
         per_page = 30
         paginated_results = LanguageData.query.paginate(page=page, per_page=per_page)
@@ -272,44 +256,22 @@ def delete_row(row_id):
          if entry_to_update:
              entry_to_update.in_dictionary = 0
              db.session.commit()
-             message = f'\'{entry_to_update.german_word}\' removed from dictionary!', 'success'
-             return jsonify({'success': True, 'message': message})
+             flash(f'The word: \'{entry_to_update.german_word}\' removed from dictionary.', 'success')
+             return redirect(url_for('index'))
+            #  print ("U:"+entry_to_update.german_word)
+            #  message = f'\'{entry_to_update.german_word}\' removed from dictionary!', 'success'
+        
+            # flash('No entry found.', 'error')
+            #  return jsonify({'success': True, 'message': message})
+        
     except Exception as e:
         db.session.rollback()
-        return jsonify({'success': False, 'message': f'Error: {str(e)}'}), 500
-        # flash(f'Error: {str(e)}', 'error')
+        flash(f'An error occurred: {e}', 'error')
+    return redirect(url_for('index'))
+    
 
     return jsonify({'success': False, 'message': 'No entry found'}), 404
 
-@app.route('/delete_all', methods=['GET','POST'])    
-def delete_all():
-    try:
-        if request.method == 'GET':
-            return render_template('delete_all.html')
-        elif request.method=='POST':
-           # Get the number of rows before deletion
-            rows_before = db.session.query(TextEntry).count()
-
-            # Delete all records from TextEntry table
-            db.session.query(TextEntry).delete()
-
-            # Commit the changes to the database
-            db.session.commit()
-
-            # Get the number of rows after deletion
-            rows_after = db.session.query(TextEntry).count()
-
-            # Calculate the number of rows deleted
-            rows_deleted = rows_before - rows_after
-
-            flash(f'{rows_deleted} words deleted successfully!', 'success')
-       
-    except Exception as e:
-        db.session.rollback()
-        flash(f'Error: {str(e)}', 'error')
-        print(f'Error: {str(e)}')
-
-    return redirect(url_for('index'))
 import requests
 
     

@@ -24,7 +24,7 @@
               <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link" href="{{url_for('exercise')}}">Exercise</a>
+              <a class="nav-link" href="{{url_for('exercise_flip')}}">Exercise</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -221,9 +221,9 @@
     </div>
     <!-- bitir -->
 
-    <div class="container-fluid mt-20 d-flex justify-content-center">
+    <div class="container-fluid mb-2">
         <div class="row">
-            <div class="fixed-bottom col-md-4">
+            <div class="fixed-bottom col-md-5">
             {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
             {% for category, message in messages %}
@@ -285,6 +285,7 @@
         });
     });
 </script>
+
 <script>
     $(document).ready(function() {
     $('#deleteConfirmButton').click(function() {
@@ -293,7 +294,7 @@
             url: '/delete_row/' + rowid,
             type: 'POST',
             success: function(response) {
-                // $('#confirmDeleteModal').modal('hide');
+                $('#confirmDeleteModal').modal('hide');
                 document.querySelector('#confirmDeleteModal button[data-bs-dismiss="modal"]').click();
                 // Refresh the table or remove the row from the table
             },
@@ -321,19 +322,11 @@
             levelList.value = storedLevel;
         }
     });
-</script>
-<!-- Add the following script in your HTML file -->
+</script> 
+
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 
-<script>
-    $(document).ready(function () {
-        // On clicking the button with ID "randomWordBtn"
-        $("#randomWordBtn").click(function () {
-            // Clear the content of the text field named "search"
-            $("#searchInput").val("");
-        });
-    });
-</script>
+
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         var buttons = document.querySelectorAll('.pronounce-btn');
@@ -358,7 +351,7 @@
         $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip(); 
         });
-        </script>
+    </script>
         
 
 
