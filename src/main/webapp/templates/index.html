@@ -24,19 +24,23 @@
               <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link" href="{{url_for('exercise_flip')}}">Exercise</a>
+              <a class="nav-link" href="{{url_for('exercise_flip')}}">Exercise Vocabulary</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('exercise_bio')}}">Exercise Biography</a>
+            </li>
+            
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Operations
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="/themes">Find themes</a>
-                <a class="dropdown-item" href="/delete_all">Remove all words</a>
+                <a class="dropdown-item" href="/delete_all">Empty dictionary</a>
                 
                 <a class="dropdown-item" href="#">Show all</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
     </nav>
@@ -126,6 +130,13 @@
                                 </tbody>
                             </table>                          
                     </div>                 
+                </div>
+                <div class="mt-3">
+                    
+                        <button type="submit" class="btn btn-danger btn-md" data-toggle="modal" data-target="#confirmEmptyDictionary">
+                            Clear dictionary
+                        </button>
+             
                 </div>
             </div>    
             <div class="col-md-5">
@@ -263,6 +274,25 @@
     </div>
 </div>
 
+<div class="modal fade" id="confirmEmptyDictionary" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Confirm Deletion</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure that you want to remove all words from the dictionary?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-danger" id="deleteDictionaryConfirmButton">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
@@ -296,6 +326,27 @@
             success: function(response) {
                 $('#confirmDeleteModal').modal('hide');
                 document.querySelector('#confirmDeleteModal button[data-bs-dismiss="modal"]').click();
+                // Refresh the table or remove the row from the table
+            },
+            error: function(xhr, status, error) {
+                // Handle error
+                console.error("Error: " + error);
+            }
+        });
+    });
+});
+</script>
+
+<script>
+    $(document).ready(function() {
+    $('#deleteDictionaryConfirmButton').click(function() {
+        // var rowid = $(this).data('rowid');
+        $.ajax({
+            url: '/delete_all',
+            type: 'POST',
+            success: function(response) {
+                $('#confirmEmptyDictionary').modal('hide');
+                document.querySelector('#confirmEmptyDictionary button[data-bs-dismiss="modal"]').click();
                 // Refresh the table or remove the row from the table
             },
             error: function(xhr, status, error) {

@@ -23,7 +23,6 @@ db = SQLAlchemy(app)
 # Create the SQLAlchemy instance
 # db = SQLAlchemy(app)
 
-# Define the model for the table
 class LanguageData(db.Model):
     __tablename__ = 'language_data'
     id = db.Column(db.Integer, primary_key=True, index=True)
@@ -37,6 +36,14 @@ class Score(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     score = db.Column(db.Integer, nullable=False)
     play_date = db.Column(db.DateTime, nullable=False)
+# bio table
+class BioGuess(db.Model):
+    __tablename__ = 'bio_guess'
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    person_name = db.Column(db.String, unique=True)
+    nationality = db.Column(db.String)
+    short_bio_en = db.Column(db.String)
+    short_bio_de = db.Column(db.String)
 
 # Function to create the application context
 def create_app_context():
@@ -70,6 +77,11 @@ def exercise():
 def exercise_flip():
     words = LanguageData.query.filter_by(in_dictionary=True).all()
     return render_template('exercise2.html', words=words)
+
+@app.route('/exercise_bio')
+def exercise_bio():
+    people = BioGuess.query.filter_by().all()
+    return render_template('exercise_biography.html', people=people)
 
 @app.route('/check_word',methods=['POST'])
 def check_word():
@@ -162,6 +174,45 @@ def populate_database(file_path):
                     print(f"Record with german_word '{german_word}' already exists. Skipping...")
                     # flash(f'Error: {str(e)}', 'error')
         
+def populate_db_with_bio(file_path):
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=db.engine)
+    with app.app_context():
+        session = SessionLocal()
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line in file:
+                if line.strip()=="":
+                    continue
+                data = line.strip().split(";")
+                person, nationality, short_bio_en, short_bio_de = data
+
+                # existing_record = session.query(LanguageData).filter_by(german_word=german_word).first()
+                # existing_record = session.query(LanguageData).filter(LanguageData.german_word == german_word).first()
+                try:
+
+                    existing_entry = BioGuess.query.filter_by(person_name=person).first()
+                    if existing_entry:
+                        existing_entry.person_name = person
+                        existing_entry.nationality = nationality
+                        existing_entry.short_bio_en = short_bio_en
+                        existing_entry.short_bio_de = short_bio_de
+                    else:                        
+                        bio_guess = BioGuess(
+                            person_name=person,
+                            nationality=nationality,
+                            short_bio_en=short_bio_en,
+                            short_bio_de=short_bio_de,
+                        )
+
+                        # Add the instance to the session
+                        db.session.add(bio_guess)
+                    # Commit the changes
+                    db.session.commit()
+                except IntegrityError  as e:
+                    db.session.rollback()
+                    print(f"Record with person '{person}' already exists. Skipping...")
+                    # flash(f'Error: {str(e)}', 'error')
+        
 
 # Helper function to close the database connection
 def close_db(e=None):
@@ -214,6 +265,20 @@ def get_results_for_page(page, per_page):
     results = LanguageData.query.paginate(page=page,per_page=per_page)
 
     return results
+@app.route('/delete_all', methods=['GET','POST'])
+def delete_all():
+    # if request.method == 'POST':
+    db = get_db()
+    cursor = db.cursor()
+
+    query = """
+    UPDATE language_data
+    SET in_dictionary = 0 
+    """
+    cursor.execute(query)
+    db.commit()
+    flash('All words removed from dictionary.', 'success')    
+    return redirect(url_for('index'))
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
@@ -299,7 +364,7 @@ if __name__ == '__main__':
         db.create_all()
         # Get the current working directory
         current_dir = os.getcwd()
-        print("cUR DIRECTORY: "+current_dir)
+        # print("cUR DIRECTORY: "+current_dir)
         # Construct the full file path
         # file_path2words = "words.txt"
 
@@ -307,5 +372,16 @@ if __name__ == '__main__':
         # full_file_path2words = os.path.join(vocab_training_dir, file_path2words)
 
         # populate_database(full_file_path2words)
+
+        
+        importPeople=False
+        importWords=False
+
+        if importPeople:
+            file_path2people = "people.txt"
+            people_file_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+            full_file_path2people = os.path.join(people_file_dir, file_path2people)
+            print('Path: '+full_file_path2people)
+            populate_db_with_bio(full_file_path2people)
 
     app.run(debug=True,host='0.0.0.0', port=5000)
