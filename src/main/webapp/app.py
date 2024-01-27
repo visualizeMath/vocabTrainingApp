@@ -6,6 +6,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy import delete, func,or_,and_
 from sqlalchemy import Result
 from sqlalchemy import Column, Integer, String
+# from db_model import Idioms
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -17,11 +18,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = secrets.token_hex(16) 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['DATABASE'] = 'instance\data.db'
-# db.init_app(app)
+
 db = SQLAlchemy(app)
 
 # Create the SQLAlchemy instance
-# db = SQLAlchemy(app)
 
 class LanguageData(db.Model):
     __tablename__ = 'language_data'
@@ -44,6 +44,13 @@ class BioGuess(db.Model):
     nationality = db.Column(db.String)
     short_bio_en = db.Column(db.String)
     short_bio_de = db.Column(db.String)
+class Idioms(db.Model):
+    __tablename__ = 'idioms'
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    idiom_de = db.Column(db.String, unique=True)
+    idiom_en = db.Column(db.String)
+    explanation_en = db.Column(db.String)
+
 
 # Function to create the application context
 def create_app_context():
@@ -82,6 +89,11 @@ def exercise_flip():
 def exercise_bio():
     people = BioGuess.query.filter_by().all()
     return render_template('exercise_biography.html', people=people)
+
+@app.route('/idioms')
+def idioms():
+    idioms_all = Idioms.query.filter_by().all()
+    return render_template('idioms.html', idioms_all=idioms_all)
 
 @app.route('/check_word',methods=['POST'])
 def check_word():
@@ -176,6 +188,7 @@ def populate_database(file_path):
         
 def populate_db_with_bio(file_path):
     SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=db.engine)
+   
     with app.app_context():
         session = SessionLocal()
         
@@ -213,6 +226,40 @@ def populate_db_with_bio(file_path):
                     print(f"Record with person '{person}' already exists. Skipping...")
                     # flash(f'Error: {str(e)}', 'error')
         
+def populate_db_with_idioms_de(file_path):
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=db.engine)
+
+    with app.app_context():
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line in file:
+                if line.strip()=="":
+                    continue
+                data = line.strip().split(";")
+                idiom_german, idiom_english, explanation = data
+                try:
+                    print('idiom german: '+ idiom_german)
+                    # existing_entry = Idioms.query.filter_by(idiom_de=idiom_german).first()
+                    # if existing_entry:
+                    #     existing_entry.idiom_de = idiom_german
+                    #     existing_entry.idiom_en = idiom_english
+                    #     existing_entry.explanation_en = explanation
+                    # else:                        
+                    new_idiom = Idioms(
+                        idiom_de=idiom_german,
+                        idiom_en=idiom_english,
+                        explanation_en=explanation,
+                    )
+
+                    # Add the instance to the session
+                    db.session.add(new_idiom)
+                    # Commit the changes
+                    db.session.commit()
+                except IntegrityError  as e:
+                    db.session.rollback()
+                    print(f"The idiom '{idiom_german}' already exists. Skipping...")
+                    # flash(f'Error: {str(e)}', 'error')
+  
 
 # Helper function to close the database connection
 def close_db(e=None):
@@ -376,6 +423,7 @@ if __name__ == '__main__':
         
         importPeople=False
         importWords=False
+        importIdioms=False
 
         if importPeople:
             file_path2people = "people.txt"
@@ -383,5 +431,12 @@ if __name__ == '__main__':
             full_file_path2people = os.path.join(people_file_dir, file_path2people)
             print('Path: '+full_file_path2people)
             populate_db_with_bio(full_file_path2people)
+        
+        if importIdioms:
+            file_path2idioms = "idioms.txt"
+            idioms_file_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+            full_file_path2idioms = os.path.join(idioms_file_dir, file_path2idioms)
+            print('Path: '+full_file_path2idioms)
+            populate_db_with_idioms_de(full_file_path2idioms)
 
     app.run(debug=True,host='0.0.0.0', port=5000)
