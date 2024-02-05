@@ -35,8 +35,16 @@
         }
 
         .custom-card-height {
-            height: 100px;
+            height: 50px;
         }
+        .bio-img {
+            width: auto;
+            height: auto;
+        }
+        .custom-rounded-card {
+             border-radius: 20px !important; 
+        }
+
 
     </style>
 </head>
@@ -50,18 +58,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('index') }}"><i class="fa fa-home"></i>  <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url_for('exercise_flip')}}">Exercise Vocabulary</a>
+              <a class="nav-link" href="{{url_for('exercise_flip')}}">Vocabulary<i class="fa fa-book mx-2"></i></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{url_for('exercise_bio')}}">Biographies</a>
-                <a class="dropdown-item" href="{{url_for('idioms')}}">German idioms</a>
+                <a class="dropdown-item" href="{{url_for('exercise_bio')}}"><i class="fa fa-user mx-2"></i>Biographies</a>
+                <a class="dropdown-item" href="{{url_for('idioms')}}"><i class="fa fa-comments mx-2"></i>Idioms</a>
+                <a class="dropdown-item" href="{{url_for('quotes')}}"><i class="fa fa-quote-left mx-2"></i>Quotes</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{url_for('delete_all')}}">Clear dictionary</a>
               </div>
@@ -83,22 +92,22 @@
                         {% for person in people %}
                         <div class="col-md-6">
                             
-                            <div class="card w-75 custom-card-height border-0">
-                            
-                                <button class="border-1 custom-card-height rounded-pill" data-toggle="collapse" data-target="#person_{{person.id}}"
-                                            aria-expanded="true">
+                            <div class="card w-50 custom-card-height custom-rounded-card">
+                                <button class="border-1 custom-card-height custom-rounded-card" data-toggle="collapse" data-target="#person_{{person.id}}"
+                                            aria-expanded="false">
                                             <p><strong>{{person.person_name}}</strong></p> 
                                 </button>
                             </div>
-                            <div class="mt-3 mb-3 mx-2 w-75">
+                            <div class="mt-3 mb-3 mx-2 w-75 custom-rounded-card">
                                 <div class="collapse width" id="person_{{person.id}}">
-                                  <div class="card card-body border-bottom text-secondary bg-light" >
+                                  <div class="card card-body border-bottom text-secondary bg-light custom-rounded-card" >
                                     <div class="d-flex justify-content-center">
                                         <button type="button" class="pronounce-btn btn-primary w-20 rounded-pill" data-word="{{person.short_bio_de}}" data-language="german">
                                             <i class="fa fa-volume-up"></i>
                                         </button>
                                     </div>
-                                    <h6><span class="badge badge-secondary"> DE </span> </h6>
+                                    <img src="../static/img/{{person.person_name}}.jpg" class="card-img-top img-fluid bip-img d-inline-block mt-3 custom-rounded-card">
+                                    <h6><span class="badge badge-secondary mt-3"> DE </span> </h6>
                                      {{person.short_bio_de}}
                                     <div class="mt-3 mb-3 text-primary">
                                         <!-- <div class="row"> -->
@@ -112,10 +121,10 @@
                                             </button>
                                         </div>
                                     </div>
-                                  </div>
-                                  <div class="card-footer text-muted">
-                                    Nationality: <span class="badge badge-secondary"> {{person.nationality}}</span>
                                 </div>
+                                <div class="card-footer text-muted custom-rounded-card">
+                                  Nationality: <span class="badge badge-secondary"> {{person.nationality}}</span>
+                              </div>
                                 </div>
                             
                             </div>
@@ -159,6 +168,33 @@
             card.style.transform = card.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
         }
     </script> -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"
+ class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; z-index: 99;">
+ <i class="fa fa-arrow-up"></i>
+</button>
+
+<script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+<script>
+    // Get the button:
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+</script>
     <script>
         document.querySelectorAll('.card-container').forEach(function (cardContainer) {
             cardContainer.addEventListener('click', function () {

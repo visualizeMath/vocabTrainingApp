@@ -52,9 +52,24 @@ class Idioms(db.Model):
     explanation_en = db.Column(db.String)
 
 
+class Quotes(db.Model):
+    __tablename__ = 'quotes'
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    quote_de = db.Column(db.String)
+    quote_en = db.Column(db.String)
+    quote_tr = db.Column(db.String)
+    explanation_en = db.Column(db.String)
+
+
 # Function to create the application context
 def create_app_context():
     return app.app_context()
+
+@app.route('/quotes', methods=['POST','GET'])
+def quotes():
+    quotes_all = Quotes.query.filter_by().all()
+    return render_template('quotes.html', quotes_all=quotes_all)
+
 
 # Route to handle button click and fetch a random word based on selected level
 @app.route('/get_random_word', methods=['POST'])
@@ -66,7 +81,7 @@ def get_random_word():
             # Query the database to get a random word with the selected level
             print('***** ',LanguageData.query.filter_by(level=selected_level).order_by(func.random()).first())
             random_word = LanguageData.query.filter_by(level=selected_level).order_by(func.random()).first()
-            print('$$$$ ',random_word)
+            # print('$$$$ ',random_word)
             if random_word:
                 return render_template('index.html',random_word=random_word)
     else:
@@ -94,7 +109,7 @@ def exercise_bio():
 def idioms():
     idioms_all = Idioms.query.filter_by().all()
     return render_template('idioms.html', idioms_all=idioms_all)
-
+    
 @app.route('/check_word',methods=['POST'])
 def check_word():
     data = request.json
@@ -135,8 +150,6 @@ def check_word():
         'current_score': current_score,
         'game_over': game_over
     })
-
-    
 
 @app.route('/get_word', methods=['GET'])
 def get_word():
@@ -259,7 +272,37 @@ def populate_db_with_idioms_de(file_path):
                     db.session.rollback()
                     print(f"The idiom '{idiom_german}' already exists. Skipping...")
                     # flash(f'Error: {str(e)}', 'error')
-  
+ 
+def populate_db_with_quotes_de(file_path):
+    SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=db.engine)
+
+    with app.app_context():
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line_number,line in enumerate(file,1):
+                if line.strip()=="":
+                    continue
+                data = line.strip().split("*")
+                if len(data) != 4:
+                  print(f"Skipping line {line_number}: Expected 4 values, got {len(data)}. Line content: {line.strip()}")
+                  continue
+                quote_german,quote_english,quote_turkish, explanation = data
+                try:                      
+                    new_quote = Quotes(
+                        quote_de=quote_german,
+                        quote_en=quote_english,
+                        quote_tr=quote_turkish,
+                        explanation_en=explanation
+                    )
+
+                    # Add the instance to the session
+                    db.session.add(new_quote)
+                    # Commit the changes
+                    db.session.commit()
+                except IntegrityError  as e:
+                    db.session.rollback()
+                    print(f"An error occurred with line {line_number}. Skipping... Error: {e}")
+ 
 
 # Helper function to close the database connection
 def close_db(e=None):
@@ -424,6 +467,7 @@ if __name__ == '__main__':
         importPeople=False
         importWords=False
         importIdioms=False
+        importQuotes=False
 
         if importPeople:
             file_path2people = "people.txt"
@@ -438,5 +482,13 @@ if __name__ == '__main__':
             full_file_path2idioms = os.path.join(idioms_file_dir, file_path2idioms)
             print('Path: '+full_file_path2idioms)
             populate_db_with_idioms_de(full_file_path2idioms)
+        
+        if importQuotes:
+            file_path2quotes = "quotes.txt"
+            quotes_file_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+            print('Quotes file dir: ' + quotes_file_dir)
+            full_file_path2quotes = os.path.join(quotes_file_dir, file_path2quotes)
+            print('Path: '+full_file_path2quotes)
+            populate_db_with_quotes_de(full_file_path2quotes)
 
     app.run(debug=True,host='0.0.0.0', port=5000)

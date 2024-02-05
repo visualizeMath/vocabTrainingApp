@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VocabApp</title>
+    <title>Idioms</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
@@ -21,18 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('index') }}"> <i class="fa fa-home"></i> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{url_for('exercise_flip')}}">Exercise Vocabulary</a>
+              <a class="nav-link" href="{{url_for('exercise_flip')}}">Vocabulary<i class="fa fa-book mx-2"></i> </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{url_for('exercise_bio')}}">Biographies</a>
-                <a class="dropdown-item" href="{{url_for('idioms')}}">German idioms</a>
+                <a class="dropdown-item" href="{{url_for('exercise_bio')}}"> <i class="fa fa-user mx-2"></i>Biographies</a>
+                <a class="dropdown-item" href="{{url_for('idioms')}}"> <i class="fa fa-comments mx-2"></i> Idioms </a>
+                <a class="dropdown-item" href="{{url_for('quotes')}}"><i class="fa fa-quote-left mx-2"></i>Quotes</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{url_for('delete_all')}}">Clear dictionary</a>
               </div>
@@ -49,14 +50,14 @@
     <div class="row">
         {% for idiom in idioms_all %}
             <div class="col-md-6">
-                <div class="card mt-3 mx-3 bg-light">
+                <div class="card mt-3 mx-3 bg-light rounded">
                     <!-- Card content here -->
                     <div class="card-body">
                         <h6><span class="badge badge-secondary"> DE </span> </h6>
                         <h4 class="card-title">{{ idiom.idiom_de }}</h4>
                         <h6><span class="badge badge-secondary"> EN </span> </h6>
                         <p class="card-text">{{ idiom.idiom_en }}</p>
-                        <h5><span class="badge badge-primary">{{ idiom.explanation_en }}</span></h5>
+                        <h6 class="text-success">{{ idiom.explanation_en }}</h6>
                     </div>
                 </div>
             </div>
@@ -99,6 +100,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top" 
+class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; z-index: 99;">
+<i class="fa fa-arrow-up"></i>
+</button>
+
+<script>
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+<script>
+    // Get the button:
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+    </script>
 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
