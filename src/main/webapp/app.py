@@ -16,8 +16,14 @@ import random
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = secrets.token_hex(16) 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
-app.config['DATABASE'] = 'instance\data.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///instance/data.db'
+# # app.config['DATABASE'] = 'instance\data.db'
+
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+db_path = os.path.join(basedir, 'instance/data.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
+
 
 db = SQLAlchemy(app)
 
