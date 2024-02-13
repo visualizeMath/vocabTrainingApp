@@ -40,13 +40,25 @@
         .bio-img {
             /* width: auto;
             height: auto; */
-            max-width:80%;
-            max-height:30%;
+            max-width:60%;
+            max-height:20%;
         }
         .custom-rounded-card {
              border-radius: 20px !important; 
         }
-
+        .head-person-bio {
+            font-family: Ramillas,Ramillas-weightbold-roboto,Ramillas-weightbold-local,Georgia,Times,Serif;
+            font-weight: 900;
+            color:#323232;
+        }
+        .person-bio-content {
+            font-family: Gilroy,Gilroy-roboto,Gilroy-local,Helvetica,Arial,Sans-serif;
+            font-weight: 700;
+            color: #595959;
+        }
+        body {
+            overflow-x: hidden;
+        }
 
     </style>
 </head>
@@ -73,8 +85,7 @@
                 <a class="dropdown-item" href="{{url_for('exercise_bio')}}"><i class="fa fa-user mx-2"></i>Biographies</a>
                 <a class="dropdown-item" href="{{url_for('idioms')}}"><i class="fa fa-comments mx-2"></i>Idioms</a>
                 <a class="dropdown-item" href="{{url_for('quotes')}}"><i class="fa fa-quote-left mx-2"></i>Quotes</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{url_for('delete_all')}}">Clear dictionary</a>
+                <!-- <div class="dropdown-divider"></div> -->
               </div>
             </li>
             
@@ -97,22 +108,22 @@
                             <div class="card w-50 custom-card-height custom-rounded-card" id="main_card">
                                 <button class="border-1 custom-card-height custom-rounded-card" data-toggle="collapse" data-target="#person_{{person.id}}"
                                             aria-expanded="false">
-                                            <p><strong>{{person.person_name}}</strong></p> 
+                                            <h3 class="head-person-bio"><strong>{{person.person_name}}</strong></h3> 
                                 </button>
                             </div>
                             <div class="mt-3 mb-3 mx-2 w-75 custom-rounded-card">
                                 <div class="collapse width" id="person_{{person.id}}">
                                   <div class="card card-body border-bottom text-secondary bg-light custom-rounded-card" >
                                     <div class="text-center">
-                                        <img src="../static/img/{{person.person_name}}.jpg" class="card-img-top img-fluid bio-img d-inline-block mt-3 custom-rounded-card center"></div>
+                                        <img src="../static/img/{{person.person_name}}.jpg" class="card-img-top img-fluid bio-img d-inline-block mt-1 custom-rounded-card center"></div>
                                     <div class="d-flex justify-content-center mt-3">
                                         <button type="button" class="pronounce-btn btn-primary w-20 rounded-pill" data-word="{{person.short_bio_de}}" data-language="german">
                                             <i class="fa fa-volume-up"></i>
                                         </button>
                                     </div>
                                     <h6><span class="badge badge-secondary mt-3"> DE </span> </h6>
-                                     {{person.short_bio_de}}
-                                    <div class="mt-3 mb-3 text-primary">
+                                     <div class="person-bio-content">{{person.short_bio_de}}</div>
+                                    <div class="mt-3 mb-3 person-bio-content">
                                         <!-- <div class="row"> -->
                             
                                             <h6><span class="badge badge-secondary"> EN </span></h6>

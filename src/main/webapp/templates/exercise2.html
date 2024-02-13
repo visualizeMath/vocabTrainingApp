@@ -33,6 +33,9 @@
             max-width: 48px;
             height: auto;
         }
+        body {
+            overflow-x: hidden;
+        }
 
     </style>
 </head>
@@ -59,8 +62,7 @@
                 <a class="dropdown-item" href="{{url_for('exercise_bio')}}"> <i class="fa fa-user mx-2"></i>Biographies</a>
                 <a class="dropdown-item" href="{{url_for('idioms')}}"> <i class="fa fa-comments mx-2"></i> Idioms </a>
                 <a class="dropdown-item" href="{{url_for('quotes')}}"><i class="fa fa-quote-left mx-2"></i>Quotes</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{url_for('delete_all')}}">Clear dictionary</a>
+                <!-- <div class="dropdown-divider"></div> -->
               </div>
             </li>
             

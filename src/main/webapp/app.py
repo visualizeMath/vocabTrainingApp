@@ -323,7 +323,7 @@ app.teardown_appcontext(close_db)
 # Helper function to get a database connection
 def get_db():
     if 'db' not in g:
-        g.db = sqlite3.connect(app.config['DATABASE'])
+        g.db = sqlite3.connect(app.config['SQLALCHEMY_DATABASE_URI'])
         g.db.row_factory = sqlite3.Row
     return g.db
 
