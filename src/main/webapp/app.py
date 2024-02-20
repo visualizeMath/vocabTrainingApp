@@ -66,6 +66,14 @@ class Quotes(db.Model):
     quote_tr = db.Column(db.String)
     explanation_en = db.Column(db.String)
 
+class Stories(db.Model):
+    __tablename__ = 'stories'
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    caption = db.Column(db.String)
+    level =db.Column(db.String)
+    story_de = db.Column(db.String)
+    story_en = db.Column(db.String)
+    story_tr = db.Column(db.String)
 
 # Function to create the application context
 def create_app_context():
@@ -75,6 +83,11 @@ def create_app_context():
 def quotes():
     quotes_all = Quotes.query.filter_by().all()
     return render_template('quotes.html', quotes_all=quotes_all)
+
+@app.route('/stories', methods=['POST','GET'])
+def stories():
+    stories_all = Stories.query.filter_by().all()
+    return render_template('stories.html', stories_all=stories_all)
 
 
 # Route to handle button click and fetch a random word based on selected level
@@ -171,7 +184,7 @@ def populate_database(file_path):
         
         with open(file_path, 'r', encoding='utf-8') as file:
             for line in file:
-                data = line.strip().split(";")
+                data = line.strip().split("*")
                 level, german_word, english_word, german_example, english_example = data
 
                 # existing_record = session.query(LanguageData).filter_by(german_word=german_word).first()
@@ -461,19 +474,23 @@ if __name__ == '__main__':
         # Get the current working directory
         current_dir = os.getcwd()
         # print("cUR DIRECTORY: "+current_dir)
-        # Construct the full file path
-        # file_path2words = "words.txt"
-
-        # vocab_training_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-        # full_file_path2words = os.path.join(vocab_training_dir, file_path2words)
-
-        # populate_database(full_file_path2words)
+       
 
         
         importPeople=False
         importWords=False
         importIdioms=False
         importQuotes=False
+
+        if importWords:
+            #  Construct the full file path
+            file_path2words = "words.txt"
+
+            vocab_training_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
+            full_file_path2words = os.path.join(vocab_training_dir, file_path2words)
+            print ('full_file_path2words: ' + full_file_path2words)
+
+            populate_database(full_file_path2words)
 
         if importPeople:
             file_path2people = "people.txt"
